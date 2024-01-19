@@ -152,6 +152,10 @@ footer{
         border-top: 1px solid $copyBorder;
         margin-top: 60px;
         font: normal normal 300 16px/40px $primary_font;
+        .site-link{
+            color: $white;
+            text-decoration: none;
+        }
         @media ($sm-1679){
             font: normal normal normal 15px/20px $primary_font;
             padding: 25px 0 30px;

@@ -209,6 +209,10 @@ footer .copy-right-blk {
   margin-top: 60px;
   font: normal normal 300 16px/40px "Inter", sans-serif;
 }
+footer .copy-right-blk .site-link {
+  color: #fff;
+  text-decoration: none;
+}
 @media (max-width: 1679px) {
   footer .copy-right-blk {
     font: normal normal normal 15px/20px "Inter", sans-serif;
