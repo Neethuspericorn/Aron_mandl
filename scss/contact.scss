@@ -157,6 +157,16 @@
             flex-direction: column;
             justify-content: center;
             height: 100%;
+            padding-top: 0;
+            padding-bottom: 160px;
+            @media ($sm-767){
+                padding-bottom: 0;
+            }
+            @media ($lg-992){
+                justify-content: flex-start;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
         }
     }
     .form-col{
