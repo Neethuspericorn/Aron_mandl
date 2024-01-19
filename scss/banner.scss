@@ -4,6 +4,9 @@
     background-size: cover;
     position: relative;
     height: calc(100vh - 153px);
+    @media ($sm-1679){
+        height: calc(100vh - 140px);
+    }
     @media (max-width:1400px){
         height: auto;
     }
