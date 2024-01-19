@@ -54,6 +54,10 @@ $(document).ready(function(){
   //         $('header').removeClass('fixed-top');
   //     }
   // });
+  $(".scroll-top a").click(function(e){
+	e.preventDefault();
+	jQuery('html,body').animate({scrollTop:0},500);
+  });
 });
 
 
@@ -77,4 +81,4 @@ var playbutton = document.getElementById("videoPlay_btn");
 			}
 	} 
 
-// document.getElementById('copyright-year').innerHTML = new Date().getFullYear();
+document.getElementById('copyright-year').innerHTML = new Date().getFullYear();

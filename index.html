@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <header class="fixed-top">
+  <header class="fixed-top" id="top">
     <div class="call-top">
       <a class="tel-link" href="tel:+1(732) 851-1200">Call Us Today: (732) 851-1200</a>
     </div>
@@ -114,7 +114,7 @@
     <section class="assoc-sec">
 			<div class="container container-custom">
 				<h2 class="sec-title">
-					Aron Mandl Immigration Law and Associates. <br><span>Your Family is Ours</span>
+					Aron Mandl & Associates Immigration Lawyers<br><span>Your Family is Ours</span>
 				</h2>
 				<div class="qst-sec">
 					<div class="qst-wrapper d-flex">
@@ -556,6 +556,8 @@
           
         </section>
 
+      
+
         <!-- Testimonials -->
       <!-- Book consultation -->
 
@@ -573,9 +575,24 @@
             </div>
         </div>
     </section>
+    <section class="logo-section">
+      <div class="container">
+        <div class="logo-inner mob-slider">
+          <div class="logo-img"><img src="img/logo1.png" alt="logo"></div>
+          <div class="logo-img"><img src="img/logo2.png" alt="logo"></div>
+          <div class="logo-img"><img src="img/logo3.png" alt="logo"></div>
+          <div class="logo-img"><img src="img/logo4.png" alt="logo"></div>
+          <div class="logo-img"><img src="img/logo5.png" alt="logo"></div>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer>
-    <div class="container container-custom container-padding">
+    <div class="container container-custom container-padding position-relative">
+      <div class="scroll-top">
+        <a href="#"><img src="img/up-arrow.svg" alt="up arrow"></a>
+      </div>
       <div class="ftr-inner">
         <div class="ftr-logo">
           <a href="#" class="ftr-brand"><img class="img-fluid" src="/img/footer-logo.svg" alt="Aron Mandl logo"></a>
@@ -639,7 +656,7 @@
         </div>
       </div>
       <div class="copy-right-blk">
-        © Copyright Immigration Law Center, Inc. 2024 | Powered by Lorem ipusm
+        © Copyright Immigration Law Center, Inc. <span id="copyright-year">2024</span> | Powered by Lorem ipusm
       </div>
     </div>
   </footer>
@@ -705,5 +722,65 @@
 		  });});
 	
 		
+  </script>
+  <script>
+
+    $(document).ready(function() {
+      // Function to initialize the slider with specific settings
+      function initSlider() {
+        return $('.mob-slider').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                arrows: false,
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                arrows: false,
+              }
+            },
+            {
+              breakpoint: 9999,
+              settings: "unslick"
+            },
+          ]
+        });
+      }
+  
+      // Initialize the slider
+      var slider = initSlider();
+  
+      // Reinitialize the slider on window resize
+      $(window).on('resize', function() {
+        var windowWidth = $(window).width();
+  
+        if (windowWidth >= 991) {
+          // If the slider is initialized, destroy it
+          if (slider.hasClass('slick-initialized')) {
+            slider.slick('unslick');
+          }
+        } else {
+          // If the slider is not initialized, initialize it with the specific settings
+          if (!slider.hasClass('slick-initialized')) {
+            slider = initSlider();
+          }
+        }
+      });
+    });
   </script>
 </html>

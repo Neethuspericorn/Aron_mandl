@@ -19,6 +19,7 @@ footer {
   background-color: #232158;
   padding: 74px 0 0;
   color: #fff;
+  position: relative;
 }
 footer .ftr-inner {
   max-width: 100%;
@@ -31,6 +32,11 @@ footer .ftr-inner.mt-inner {
 footer .ftr-inner .compine-blk {
   display: flex;
 }
+@media (max-width: 991px) {
+  footer .ftr-inner .compine-blk {
+    flex-direction: column;
+  }
+}
 footer .ftr-inner .ftr-logo {
   margin-bottom: 35px;
 }
@@ -41,10 +47,36 @@ footer .ftr-inner .ftr-logo .ftr-brand {
 footer .ftr-inner .ftr-left {
   max-width: 462px;
 }
+@media (max-width: 1679px) {
+  footer .ftr-inner .ftr-left {
+    max-width: 375px;
+  }
+}
+@media (max-width: 1481px) {
+  footer .ftr-inner .ftr-left {
+    max-width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  footer .ftr-inner .ftr-left {
+    order: 2;
+    max-width: 100%;
+  }
+}
 footer .ftr-inner .ftr-left .ftr-txt {
   max-width: 100%;
   font: normal normal normal 16px/31px "Inter", sans-serif;
   letter-spacing: 0.48px;
+}
+@media (max-width: 1679px) {
+  footer .ftr-inner .ftr-left .ftr-txt {
+    font: normal normal normal 15px/30px "Inter", sans-serif;
+  }
+}
+@media (max-width: 1679px) {
+  footer .ftr-inner .ftr-left .ftr-txt {
+    font: normal normal normal 14px/29px "Inter", sans-serif;
+  }
 }
 footer .ftr-inner .ftr-left .social-icon-set {
   max-width: 235px;
@@ -55,6 +87,11 @@ footer .ftr-inner .ftr-left .social-icon-set {
 footer .ftr-inner .ftr-left .social-icon-set .icon {
   display: flex;
 }
+@media (max-width: 991px) {
+  footer .ftr-inner .ftr-left .social-icon-set {
+    margin: 0 auto;
+  }
+}
 footer .ftr-inner .ftr-right {
   max-width: 758px;
   width: 100%;
@@ -62,9 +99,22 @@ footer .ftr-inner .ftr-right {
   display: flex;
   justify-content: end;
 }
+@media (max-width: 991px) {
+  footer .ftr-inner .ftr-right {
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+}
 footer .ftr-inner .ftr-right .ftr-nav {
   display: flex;
   width: 100%;
+  justify-content: flex-end;
+}
+@media (max-width: 991px) {
+  footer .ftr-inner .ftr-right .ftr-nav {
+    margin-left: 0px;
+    justify-content: flex-start;
+  }
 }
 footer .ftr-inner .ftr-right .ftr-nav .ftr-menu {
   margin: 0;
@@ -73,15 +123,59 @@ footer .ftr-inner .ftr-right .ftr-nav .ftr-menu {
   -moz-column-gap: 60px;
        column-gap: 60px;
 }
+@media (max-width: 1679px) {
+  footer .ftr-inner .ftr-right .ftr-nav .ftr-menu {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+@media (max-width: 1481px) {
+  footer .ftr-inner .ftr-right .ftr-nav .ftr-menu {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+@media (max-width: 1281px) {
+  footer .ftr-inner .ftr-right .ftr-nav .ftr-menu {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  footer .ftr-inner .ftr-right .ftr-nav .ftr-menu {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  footer .ftr-inner .ftr-right .ftr-nav .ftr-menu {
+    flex-direction: column;
+  }
+}
 footer .ftr-inner .ftr-right .ftr-nav .ftr-menu li {
   list-style: none;
   display: flex;
+}
+@media (max-width: 991px) {
+  footer .ftr-inner .ftr-right .ftr-nav .ftr-menu li {
+    margin-bottom: 10px;
+  }
 }
 footer .ftr-inner .ftr-right .ftr-nav .ftr-menu li a.ftr-link {
   color: #fff;
   text-decoration: none;
   font: normal normal normal 16px/20px "Inter", sans-serif;
   flex: 1;
+}
+@media (max-width: 1679px) {
+  footer .ftr-inner .ftr-right .ftr-nav .ftr-menu li a.ftr-link {
+    font: normal normal normal 15px/19px "Inter", sans-serif;
+  }
+}
+@media (max-width: 1481px) {
+  footer .ftr-inner .ftr-right .ftr-nav .ftr-menu li a.ftr-link {
+    font: normal normal normal 14px/18px "Inter", sans-serif;
+  }
 }
 footer .ftr-inner .ftr-right .blk-wrp {
   display: flex;
@@ -111,7 +205,35 @@ footer .copy-right-blk {
   width: 100%;
   text-align: center;
   padding: 30px 0 38px;
-  border-top: 1px solid #37357f;
+  border-top: 1px solid #3D3B7E;
   margin-top: 60px;
   font: normal normal 300 16px/40px "Inter", sans-serif;
+}
+@media (max-width: 1679px) {
+  footer .copy-right-blk {
+    font: normal normal normal 15px/20px "Inter", sans-serif;
+    padding: 25px 0 30px;
+  }
+}
+@media (max-width: 1481px) {
+  footer .copy-right-blk {
+    font: normal normal normal 14px/20px "Inter", sans-serif;
+    padding: 20px 0 25px;
+  }
+}
+footer .scroll-top {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: #434086;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  right: 100px;
+  bottom: 50px;
+}
+footer .scroll-top img {
+  max-width: 17px;
 }
