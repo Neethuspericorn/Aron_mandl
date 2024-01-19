@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.book-consultation {
+  background-color: #F2F5FA;
+  padding: 95px 0; }
+  .book-consultation .title-block {
+    text-align: center; }
+    .book-consultation .title-block .sec-title {
+      margin-bottom: 25px; }
+    .book-consultation .title-block p {
+      max-width: 1065px;
+      margin: 0 auto;
+      color: #2D3D76;
+      font-size: 19px;
+      font-family: "Inter", sans-serif; }
+  .book-consultation .book-tab-cover {
+    padding-top: 70px; }
+    .book-consultation .book-tab-cover .book-tab-block {
+      border-radius: 20px;
+      opacity: 1;
+      background-color: #fff;
+      max-width: 890px;
+      margin: 0 auto; }
+
+@media (max-width: 1679px) {
+  .book-consultation .title-block p {
+    font-size: 17px; }
+
+  .book-consultation .title-block p {
+    max-width: 950px; }
+
+  .book-consultation .book-tab-cover {
+    padding-top: 50px; }
+
+  .book-consultation {
+    padding: 65px 0; } }
+@media (max-width: 1441px) {
+  .book-consultation .title-block p {
+    font-size: 16px; }
+
+  .book-consultation .title-block p {
+    max-width: 900px; }
+
+  .book-consultation .book-tab-cover {
+    padding-top: 40px; }
+
+  .book-consultation {
+    padding: 55px 0; } }
+@media (max-width: 1281px) {
+  .book-consultation .title-block p {
+    font-size: 14px; } }
+@media (max-width: 579px) {
+  .book-consultation {
+    padding: 40px 0; }
+
+  .book-consultation .book-tab-cover {
+    padding-top: 30px; }
+
+  .book-consultation .title-block .sec-title {
+    margin-bottom: 20px; } }
+
+/*# sourceMappingURL=book-consultation.css.map */

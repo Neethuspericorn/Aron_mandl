@@ -4,7 +4,7 @@ $(document).ready(function(){
         dots:false,
         fade: true
     });
-    $('.team-slider').slick({
+    $('.meet-slider').slick({
 			dots: true,
 			infinite: true,
 			// autoplay:true,
@@ -55,6 +55,9 @@ $(document).ready(function(){
   //     }
   // });
 });
+
+
+
 
 var playbutton = document.getElementById("videoPlay_btn");
 	playbutton.addEventListener("click", playPause);
