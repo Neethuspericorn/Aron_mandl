@@ -1,4 +1,14 @@
 $(document).ready(function(){
+	$("a").on('click', function(e) {
+		if (this.hash !== "") {
+			e.preventDefault();
+			var menuLink = this.hash;
+	  		$('html, body').animate({
+			  scrollTop: $(menuLink).offset().top - 150
+			}, 800)
+			$('.close-menu').trigger('click');
+		  } 
+	})
     $('.banner-slider').slick({
         arrows: false,
         dots:false,
