@@ -468,6 +468,20 @@
 
 
 .testimonial-sec{
+    padding:80px 0px;
+   
+    @media ($sm-1679){
+        padding:60px 0px;
+    }
+    @media ($sm-1441){
+        padding:60px 0px;
+       
+    }
+
+    @media ($sm-991){
+        padding:50px 0px;
+       
+    }
     .heading-sec {
         width: 75%;
         margin: 0 auto;
@@ -591,3 +605,41 @@
     }
 
 }
+.logo-section{
+    padding: 80px 0px;
+    @media ($sm-1679){
+        padding: 60px 0px;
+   
+    }
+    .logo-inner {
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        @media ($sm-991){
+            display: unset;
+          
+           }
+        .logo-img {
+            width: 190px;
+            height: 124px;
+            @media ($sm-1679){
+                width: 140px;
+                 height: 124px;
+           
+            }
+          
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                @media ($sm-1679){
+                 object-fit: contain;
+               
+                }
+            }
+           
+        }
+
+    }
+}
+

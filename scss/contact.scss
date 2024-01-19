@@ -1,0 +1,228 @@
+@import 'partials';
+
+.contact{
+    background: #f2f5fa url(../img/contact-bg.svg) no-repeat bottom center/contain;
+    padding-top: 170px;
+    padding-bottom: 130px;
+    @media ($sm-1679){
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+    @media ($sm-1441){
+        padding-top: 80px;
+    }
+    @media ($sm-1199){
+        padding-top: 60px;
+    }
+    @media ($sm-991){
+        padding-top: 50px;
+    }
+    color: #2D3D76;
+    .input-wrp{
+        
+        margin-bottom: 35px;
+        position: relative;
+        .error{
+            color: #f24444;
+            font-size: 11px;
+            position: absolute;
+            top: 100%;
+        }
+        @media ($sm-1679){
+            margin-bottom: 26px;
+        }
+        @media ($sm-1441){
+            margin-bottom: 20px;
+        }
+        @media ($sm-1199){
+            margin-bottom: 18px;
+        }
+        label{
+            font-size: 17px;
+            @media ($sm-1679){
+                font-size: 16px;
+            }
+            @media ($sm-1441){
+                font-size: 14px;
+            }
+            @media ($sm-1199){
+                font-size: 13px;
+            }
+            color: #2D3D76;
+            sup.req{
+                color: #F24444;
+            }
+        }
+        textarea.form-control{
+            height: 180px;
+            @media ($sm-1679){
+                height: 160px;
+            }
+            @media ($sm-1441){
+                height: 140px;
+            }
+            @media ($sm-1199){
+                height: 120px;
+            }
+            @media ($sm-991){
+                height: 80px;
+            }
+             
+        }   
+        .form-control{
+            border-radius: 27px;
+            padding: 13px 30px;
+            box-shadow: none !important;
+            border-color: transparent !important;
+            @media ($sm-1679){
+                font-size: 16px;
+                padding: 12px 26px;
+            }
+            @media ($sm-1441){
+                font-size: 14px;
+                padding: 10px 24px;
+                border-radius: 20px;
+            }
+            @media ($sm-1199){
+                font-size: 13px;
+                padding: 10px 20px;
+                
+            }
+            &::placeholder{
+                color: #D8E6F0;
+            }
+        }
+        .btn-main{
+            width: 100%;
+            background-color: #232158;
+            color: #ffffff;
+            border-radius: 27px;
+            font-size: 17px;
+            padding: 13px 30px;
+            @media ($sm-1679){
+                font-size: 16px;
+                padding: 12px 26px;
+            }
+            @media ($sm-1441){
+                font-size: 14px;
+                padding: 10px 24px;
+                border-radius: 20px;
+            }
+            @media ($sm-1199){
+                font-size: 13px;
+                padding: 10px 20px;
+                 
+            }
+        }
+        .phone{
+            font-size: 25px;
+            color: #2D3D76;
+            display: flex;
+            align-items: center;
+            @media ($sm-1679){
+                font-size: 20px;
+            }
+            @media ($sm-1441){
+                font-size: 18px;
+            }
+            @media ($sm-1199){
+                font-size: 16px;
+            }
+            .tel{
+                color: #42499D;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 1.24em;
+            }
+            .callIco{
+                width: 70px;
+                height: 70px;
+                 
+                @media ($sm-1441){
+                    width: 60px;
+                    height: 60px;
+                }
+                @media ($sm-1199){
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    .txt-col{
+        .txt-wrp{
+            max-width: 530px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+    .form-col{
+        max-width: 510px;
+        margin-left: auto;
+        @media  ($sm-767){
+            margin-right: auto;
+            max-width: 100%;
+            padding-top: 10px;
+        }
+    }
+    .sec-info{
+        display: flex;
+        font-size: 19px;
+        margin-bottom: 1.5em;
+        @media ($sm-1679){
+            font-size: 16px;
+        }
+        @media ($sm-1441){
+            font-size: 14px;
+        }
+        @media ($sm-1199){
+            font-size: 13px;
+        }
+        span{
+            position: relative;
+            &:after{
+                position: absolute;
+                bottom: -10px;
+                content: '';
+                height: 1px;
+                width: 100%;
+                background-color: #8DA3EF;
+                left: 0;
+            }
+        }
+        
+    }
+    .sec-title{
+        font-size: 47px;
+        font-weight: 600;
+        line-height: 1.38;
+        margin-bottom: 0.4em;
+        @media ($sm-1679){
+            font-size: 40px;
+        }
+        @media ($sm-1441){
+            font-size: 36px;
+        }
+        @media ($sm-1199){
+            font-size: 28px;
+        }
+    }
+    .sec-subtitle{
+        font-size: 26px;
+        line-height: 1.6;
+        font-weight: 400;
+        color: #2D3D76;
+        @media ($sm-1679){
+            font-size: 20px;
+        }
+        @media ($sm-1441){
+            font-size: 16px;
+        }
+        @media ($sm-1199){
+            font-size: 15px;
+        }
+    }
+} 
