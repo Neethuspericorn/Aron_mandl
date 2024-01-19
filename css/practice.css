@@ -338,14 +338,12 @@
   height: 100%;
   display: block;
   border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 @media (max-width: 991px) {
   .team-slider .slick-slide img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 20px;
   }
 }
@@ -428,8 +426,8 @@
 }
 @media (max-width: 1281px) {
   .team-slider .btn-arrow {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
   }
 }
 .team-slider .btn-arrow:before {
@@ -477,9 +475,9 @@
 }
 @media (max-width: 767px) {
   .team-slider .slick-prev {
-    right: 59px;
+    right: 75px;
     left: unset;
-    top: -28px;
+    top: -40px;
   }
 }
 .team-slider .slick-next {
@@ -504,7 +502,7 @@
 }
 @media (max-width: 767px) {
   .team-slider .slick-next {
-    top: -28px;
+    top: -40px;
     right: 29px;
   }
 }
@@ -549,7 +547,7 @@
 }
 @media (max-width: 1281px) {
   .testimonial-sec .testimonial-content {
-    min-height: 200px;
+    min-height: 300px;
   }
 }
 .testimonial-sec .testimonial-content p {
@@ -583,8 +581,7 @@
   }
 }
 .testimonial-sec .quote-img img {
-  -o-object-fit: contain !important;
-     object-fit: contain !important;
+  object-fit: contain !important;
 }
 .testimonial-sec .details1.testmonial-detail {
   display: flex;

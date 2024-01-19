@@ -386,8 +386,8 @@
         }
     
         @media ($sm-1281){
-            width: 24px;
-            height: 24px;
+            width: 34px;
+            height: 34px;
          
         }
 
@@ -434,9 +434,9 @@
         }
         @media ($sm-767){
     
-        right: 59px;
-        left: unset;
-        top: -28px;
+            right: 75px;
+            left: unset;
+            top: -40px;
     
         
         }
@@ -463,7 +463,7 @@
         }
         @media ($sm-767){
     
-        top: -28px;
+        top: -40px;
         right: 29px;
         }
     }
@@ -505,7 +505,7 @@
         }
         @media ($sm-1281){
            
-            min-height: 200px;
+            min-height: 300px;
         }
         p{
             font-family: $title_font;
