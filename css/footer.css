@@ -311,9 +311,9 @@ footer .ftr-inner .ftr-right .ftr-blks .title {
   font: normal normal normal 15px/19px "Inter", sans-serif;
   flex: 0 0 auto;
 }
-@media (max-width: 991px) {
+@media (max-width: 1679px) {
   footer .ftr-inner .ftr-right .ftr-blks .title {
-    font: normal normal normal 14px/18px "Inter", sans-serif;
+    font: normal normal normal 14px/24px "Inter", sans-serif;
   }
 }
 @media (max-width: 579px) {

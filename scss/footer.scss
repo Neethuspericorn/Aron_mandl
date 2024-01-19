@@ -207,8 +207,8 @@ footer{
                     margin-right: 18px;
                     font: normal normal normal 15px/19px $primary_font;
                     flex: 0 0 auto;
-                    @media ($sm-991){
-                        font: normal normal normal 14px/18px $primary_font;
+                    @media ($sm-1679){
+                        font: normal normal normal 14px/24px $primary_font;
                     }
                     @media ($sm-579){
                         margin-bottom: 10px;
