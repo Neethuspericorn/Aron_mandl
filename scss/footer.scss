@@ -278,7 +278,7 @@ footer{
             height: 50px;
         }
         @media ($sm-767){
-            display: none;
+            display: none !important;
         }
         img{
             max-width: 17px;

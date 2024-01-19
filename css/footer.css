@@ -394,7 +394,7 @@ footer .scroll-top {
 }
 @media (max-width: 767px) {
   footer .scroll-top {
-    display: none;
+    display: none !important;
   }
 }
 footer .scroll-top img {
