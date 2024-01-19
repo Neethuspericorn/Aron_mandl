@@ -4,6 +4,12 @@ footer{
     padding: 74px 0 0;
     color: $white;
     position: relative;
+    @media ($sm-1679){
+        padding: 50px 0 0;
+    }
+    @media ($sm-1481){
+        padding: 40px 0 0;
+    }
     .ftr-inner{
         max-width: 100%;
         display: flex;
@@ -19,6 +25,12 @@ footer{
         }
         .ftr-logo{
             margin-bottom: 35px;
+            @media ($sm-1679){
+                margin-bottom: 30px;
+            }
+            @media ($sm-1481){
+                margin-bottom: 20px;
+            }
             .ftr-brand{
                 display: block;
                 max-width: 95px;
@@ -159,10 +171,18 @@ footer{
         @media ($sm-1679){
             font: normal normal normal 15px/20px $primary_font;
             padding: 25px 0 30px;
+            margin-top: 40px;
         }
         @media ($sm-1481){
             font: normal normal normal 14px/20px $primary_font;
             padding: 20px 0 25px;
+            margin-top: 30px;
+        }
+        @media ($sm-1281){
+            margin-top: 25px;
+        }
+        @media ($sm-991){
+            margin-top: 20px;
         }
     }
     .scroll-top{

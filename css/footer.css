@@ -21,6 +21,16 @@ footer {
   color: #fff;
   position: relative;
 }
+@media (max-width: 1679px) {
+  footer {
+    padding: 50px 0 0;
+  }
+}
+@media (max-width: 1481px) {
+  footer {
+    padding: 40px 0 0;
+  }
+}
 footer .ftr-inner {
   max-width: 100%;
   display: flex;
@@ -39,6 +49,16 @@ footer .ftr-inner .compine-blk {
 }
 footer .ftr-inner .ftr-logo {
   margin-bottom: 35px;
+}
+@media (max-width: 1679px) {
+  footer .ftr-inner .ftr-logo {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1481px) {
+  footer .ftr-inner .ftr-logo {
+    margin-bottom: 20px;
+  }
 }
 footer .ftr-inner .ftr-logo .ftr-brand {
   display: block;
@@ -217,12 +237,24 @@ footer .copy-right-blk .site-link {
   footer .copy-right-blk {
     font: normal normal normal 15px/20px "Inter", sans-serif;
     padding: 25px 0 30px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 1481px) {
   footer .copy-right-blk {
     font: normal normal normal 14px/20px "Inter", sans-serif;
     padding: 20px 0 25px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1281px) {
+  footer .copy-right-blk {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 991px) {
+  footer .copy-right-blk {
+    margin-top: 20px;
   }
 }
 footer .scroll-top {
