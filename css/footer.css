@@ -39,6 +39,21 @@ footer .ftr-inner {
 footer .ftr-inner.mt-inner {
   margin-top: 52px;
 }
+@media (max-width: 1679px) {
+  footer .ftr-inner.mt-inner {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 1481px) {
+  footer .ftr-inner.mt-inner {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1281px) {
+  footer .ftr-inner.mt-inner {
+    margin-top: 20px;
+  }
+}
 footer .ftr-inner .compine-blk {
   display: flex;
 }

@@ -16,6 +16,15 @@ footer{
         flex-direction: column;
         &.mt-inner{
             margin-top: 52px;
+            @media ($sm-1679){
+                margin-top: 35px;
+            }
+            @media ($sm-1481){
+                margin-top: 30px;
+            }
+            @media ($sm-1281){
+                margin-top: 20px;
+            }
         }
         .compine-blk{
             display: flex;
