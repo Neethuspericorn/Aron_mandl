@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	$(window).on("load resize",function(e){
+		 scWidth = $(window).width() ;
+	});
 	$("a").on('click', function(e) {
 		if (this.hash !== "") {
 			e.preventDefault();
@@ -6,7 +9,10 @@ $(document).ready(function(){
 	  		$('html, body').animate({
 			  scrollTop: $(menuLink).offset().top - 150
 			}, 800)
-			$('.close-menu').trigger('click');
+			if(scWidth<991){
+				$('.close-menu').trigger('click');
+			}
+			
 		  } 
 	})
     $('.banner-slider').slick({
