@@ -1,7 +1,151 @@
 @import 'partials';
 
 .contact{
-    background-color: #f2f5fa;
+    background: #f2f5fa url(../img/contact-bg.svg) no-repeat bottom center/contain;
     padding-top: 170px;
     padding-bottom: 130px;
+    @media ($sm-1679){
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+    @media ($sm-1441){
+        padding-top: 80px;
+    }
+    @media ($sm-1199){
+        padding-top: 80px;
+    }
+    color: #2D3D76;
+    .input-wrp{
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        label{
+            font-size: 17px;
+            color: #2D3D76;
+            sup.req{
+                color: #F24444;
+            }
+        }
+        .form-control{
+            border-radius: 27px;
+            padding: 13px 30px;
+            box-shadow: none !important;
+            border-color: transparent !important;
+            &::placeholder{
+                color: #D8E6F0;
+            }
+        }
+        .btn-main{
+            width: 100%;
+            background-color: #232158;
+            color: #ffffff;
+            border-radius: 27px;
+            font-size: 17px;
+            padding: 13px 30px;
+        }
+        .phone{
+            font-size: 25px;
+            color: #2D3D76;
+            display: flex;
+            align-items: center;
+            @media ($sm-1679){
+                font-size: 20px;
+            }
+            @media ($sm-1441){
+                font-size: 18px;
+            }
+            @media ($sm-1199){
+                font-size: 16px;
+            }
+            .tel{
+                color: #42499D;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 1.24em;
+            }
+            .callIco{
+                width: 70px;
+                height: 70px;
+                 
+                @media ($sm-1441){
+                    width: 60px;
+                    height: 60px;
+                }
+                @media ($sm-1199){
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    .txt-col{
+        .txt-wrp{
+            max-width: 530px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+    .form-col{
+        max-width: 510px;
+        margin-left: auto;
+    }
+    .sec-info{
+        display: flex;
+        font-size: 19px;
+        margin-bottom: 30px;
+        @media ($sm-1679){
+            font-size: 16px;
+        }
+        @media ($sm-1441){
+            font-size: 14px;
+        }
+        @media ($sm-1199){
+            font-size: 13px;
+        }
+        span{
+            position: relative;
+            &:after{
+                position: absolute;
+                bottom: -10px;
+                content: '';
+                height: 1px;
+                width: 100%;
+                background-color: #8DA3EF;
+                left: 0;
+            }
+        }
+        
+    }
+    .sec-title{
+        font-size: 47px;
+        font-weight: 600;
+        line-height: 1.38;
+        margin-bottom: 20px;
+        @media ($sm-1679){
+            font-size: 40px;
+        }
+        @media ($sm-1441){
+            font-size: 32px;
+        }
+        @media ($sm-1199){
+            font-size: 24px;
+        }
+    }
+    .sec-subtitle{
+        font-size: 26px;
+        line-height: 1.6;
+        font-weight: 400;
+        color: #2D3D76;
+        @media ($sm-1679){
+            font-size: 20px;
+        }
+        @media ($sm-1441){
+            font-size: 16px;
+        }
+        @media ($sm-1199){
+            font-size: 15px;
+        }
+    }
 } 
