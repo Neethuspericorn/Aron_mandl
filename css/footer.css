@@ -392,6 +392,11 @@ footer .scroll-top {
     height: 50px;
   }
 }
+@media (max-width: 767px) {
+  footer .scroll-top {
+    display: none;
+  }
+}
 footer .scroll-top img {
   max-width: 17px;
 }

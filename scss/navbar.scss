@@ -83,6 +83,7 @@ header{
         top: 20px;
         outline: none;
         box-shadow: none;
+        z-index: 1;
         img{
             @media ($sm-991){
                 max-width: 15px;
@@ -121,6 +122,9 @@ header{
     }
     .navbar-nav{
         align-items: center;
+        @media ($sm-991){
+            align-items: flex-start;
+        }
         .nav-link{
             color: $navLink;
             font: normal normal 500 17px/20px $primary_font;
@@ -144,7 +148,9 @@ header{
             @media screen and ($sm-991){
                 color: $white;
                 font: normal normal 500 14px/17px $primary_font;
-                margin-bottom: 5px;
+                margin-bottom: 0px;
+                border-bottom: 1px solid $menuBorderMob;
+               
             }
             &.btn{
                 text-align: center;
@@ -180,6 +186,7 @@ header{
                     margin-top: 10px;
                     padding: 15px 25px;
                     font-size: 14px;
+                    margin-left: 0px;
                 }
                 &:hover{
                     color: rgba(255,255,255,0.6);
@@ -209,7 +216,7 @@ header{
                     left: 10px;
                 }
                 @media ($sm-991){
-                    background-color: $white;
+                    display: none;
                 }
                }
             }
@@ -242,6 +249,10 @@ header{
     }
 
     .nav-item{
+        @media ($sm-991){
+            width: 100%;
+            margin-bottom: 10px;
+        }
         .dropdown-menu{
             top: calc(100% + 18px);
             padding-top: 0;
