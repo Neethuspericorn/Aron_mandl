@@ -346,6 +346,7 @@ footer .copy-right-blk {
 footer .copy-right-blk .site-link {
   color: #fff;
   text-decoration: none;
+  font-weight: 700;
 }
 @media (max-width: 1679px) {
   footer .copy-right-blk {

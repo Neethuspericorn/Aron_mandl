@@ -1,4 +1,20 @@
 $(document).ready(function(){
+	$(window).on("load resize",function(e){
+		 scWidth = $(window).width() ;
+	});
+	$("a").on('click', function(e) {
+		if (this.hash !== "") {
+			e.preventDefault();
+			var menuLink = this.hash;
+	  		$('html, body').animate({
+			  scrollTop: $(menuLink).offset().top - 150
+			}, 800)
+			if(scWidth<991){
+				$('.close-menu').trigger('click');
+			}
+			
+		  } 
+	})
     $('.banner-slider').slick({
         arrows: false,
         dots:false,
