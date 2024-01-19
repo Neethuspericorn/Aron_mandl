@@ -1,0 +1,161 @@
+@import 'partials';
+$primary-blue: #2D3D76;
+.about-sec{
+    padding: 200px 0;
+    background-color: #232158;
+    .about-sec-wrapper{
+        .content-col{
+            padding-top: 25px;
+            flex: 1 1 auto;
+            padding-right: 85px;
+            .sec-title{
+                margin-bottom: 35px;
+                color: #fff;
+            }
+            p{
+                color: #fff;
+                font-size: 17px;
+                font-family: $primary_font;
+                margin-bottom: 30px;
+                line-height: 26px;
+            }
+        }
+        .video-col{
+            flex: 0 0 auto;
+            .video-block{
+                width: 715px;
+                position: relative;
+                border-radius: 15px;
+                overflow: hidden;
+                aspect-ratio: 1.603;
+                .abt-video{
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .play-btn{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    outline: none;
+                    border-radius: 50%;
+                    width: 81px;
+                    height: 81px;
+                    opacity: 1;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px) brightness(14);
+                    font-size: 28px;
+                    color: #fff;
+                    background: rgb(127,152,180);
+                    background: linear-gradient(125deg, rgba(127,152,180,1) 0%, rgba(72,87,116,1) 100%);
+                }
+                &:hover{
+                    .play-btn{
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media ($sm-1679){
+    .about-sec {
+        padding: 140px 0 100px;
+    }
+    .about-sec .about-sec-wrapper .content-col p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .about-sec .about-sec-wrapper .content-col {
+        padding-right: 70px;
+    }
+}
+@media ($sm-1441){
+    .about-sec {
+        padding: 110px 0 100px;
+    }
+}
+@media (max-width: 1400px){
+    .about-sec .about-sec-wrapper .content-col p {
+        font-size: 15px;
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+    .about-sec .about-sec-wrapper .content-col .sec-title {
+        margin-bottom: 25px;
+    }
+    // .about-sec .about-sec-wrapper .video-col .video-block {
+    //     width: 560px;
+    //     height: 380px;
+    // }
+    .about-sec .about-sec-wrapper .content-col {
+        padding-right: 40px;
+    }
+}
+@media ($sm-1199){
+    .about-sec .about-sec-wrapper .video-col {
+        width: 50%;
+    }
+    .about-sec .about-sec-wrapper .video-col .video-block {
+        width: 100%;
+        height: 380px;
+    }
+    .about-sec .about-sec-wrapper .video-col .video-block .play-btn{
+        width: 75px;
+        height: 75px;
+        font-size: 20px;
+    }
+    .about-sec {
+        padding: 85px 0 70px;
+    }
+}
+@media ($sm-991){
+    .about-sec .about-sec-wrapper{
+        flex-wrap: wrap;
+    }
+    .about-sec .about-sec-wrapper .content-col{
+        width: 100%;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 25px;
+    }
+    .about-sec .about-sec-wrapper .video-col{
+        width: 100%;
+    }
+    .about-sec .about-sec-wrapper .video-col .video-block{
+        height: auto;
+    }
+}
+@media ($sm-767){
+    .about-sec {
+        padding: 60px 0 50px;
+    }
+}
+
+@media ($sm-579){
+    .about-sec .about-sec-wrapper .video-col .video-block .play-btn {
+        width: 65px;
+        height: 65px;
+        font-size: 18px;
+    }
+    .about-sec {
+        padding: 40px 0;
+    }
+}
+@media ($sm-479){
+    .about-sec .about-sec-wrapper .video-col .video-block .play-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 16px;
+    }
+}

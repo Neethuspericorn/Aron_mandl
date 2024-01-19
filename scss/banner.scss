@@ -1,0 +1,176 @@
+@import 'partials';
+.home-banner{
+    background:url(../img/banner_image.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 153px);
+    @media (max-width:1400px){
+        height: auto;
+    }
+        
+    .banner-slider{
+        height: 100%;
+        .slick-list,.slick-track, .slick-slide{
+            height: 100%;
+        }
+        .container{
+            height: 100%;
+        }
+    }
+    .bnr-wrp{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        @media (max-width:1400px){
+            align-items: center;
+        }
+        @media ($sm-767){
+            flex-direction: column;
+        }
+    }
+    .banner-img{
+        // padding-left: 66px;
+        // margin-top: 91px;
+        max-width: 678px;
+        margin-left: 79px;
+        @media ($sm-1679){
+          max-width: 465px;
+          margin-left: 30px;
+        }
+        @media (max-width:1581px){
+            max-width: 420px;
+            margin-left: 30px;
+          }
+        @media ($sm-1481){
+            max-width: 385px;
+            margin-left: 30px;
+          }
+        @media (max-width:1400px){
+            max-width: 330px;
+            margin-top: 40px;
+        }
+        @media ($sm-1199){
+            max-width: 290px;
+            margin-top: 40px;
+        }
+        @media ($sm-991){
+            max-width: 220px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        img{
+            max-width: 590px;
+            height: auto;
+            @media (max-width:1800px){
+                max-width: 500px;
+            }
+            @media ($sm-1679){
+                max-width: 100%;
+            }
+        }
+
+    }
+    .banner-desc{
+        max-width: 755px;
+        width: 100%;
+        color: $white;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        flex: 0 0 auto;
+        @media ($sm-1679){
+            max-width: 878px;
+            flex: 1;
+        }
+        @media ($sm-1199){
+            max-width: 878px;
+        }
+        @media ($sm-991){
+            max-width: 100%;
+            margin-top: 30px;
+        }
+        .heading{
+            font: normal normal 700 38px/55px $title_font;
+            margin-bottom: 0px;
+            @media ($sm-1679){
+                font: normal normal 700 30px/46px $title_font;
+            }
+            @media ($sm-1441){
+                font: normal normal 700 28px/44px $title_font;
+            }
+            @media ($sm-1281){
+                font: normal normal 700 27px/42px $title_font;
+            }
+            @media ($sm-1199){
+                font: normal normal 700 25px/41px $title_font;
+            }
+            @media ($sm-1199){
+                font: normal normal 700 20px/36px $title_font;
+            }
+            @media ($sm-991){
+                font: normal normal 700 19px/34px $title_font;
+            }
+            @media ($sm-767){
+                font: normal normal 700 18px/30px $title_font;
+            }
+            span{
+                display: block;
+            }
+        }
+        .bnr-cta{
+            border: 1px solid $white;
+            border-radius: 28px;
+            padding: 10px 49px;
+            margin-top: 45px;
+            text-decoration: none;
+            font: normal normal 500 22px/26px $primary_font;
+            color: $white;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            span{
+                position: relative;
+                z-index: 1;
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: $white;
+                position: absolute;
+                left: 0px;
+                transition: all 0.5s linear;
+                transform: translateX(-100%);
+                top: 0;
+            }
+            &:hover{
+                color: $navActive;
+                &::after{
+                    transform: translateX(0);
+                }
+            }
+            @media ($sm-1679){
+                font: normal normal 500 18px/22px $primary_font;
+                margin-top: 30px;
+                padding: 10px 40px;
+            }
+            @media ($sm-1481){
+                font: normal normal 500 16px/20px $primary_font;
+                margin-top: 25px;
+                padding: 10px 40px;
+            }
+            @media ($sm-1281){
+                font: normal normal 500 15px/19px $primary_font;
+                margin-top: 20px;
+                padding: 10px 40px;
+            }
+            @media ($sm-1199){
+                font: normal normal 500 14px/18px $primary_font;
+                margin-top: 20px;
+                padding: 10px 40px;
+            }
+        }
+    }
+}

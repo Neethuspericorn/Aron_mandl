@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.about-sec {
+  padding: 200px 0;
+  background-color: #232158;
+}
+.about-sec .about-sec-wrapper .content-col {
+  padding-top: 25px;
+  flex: 1 1 auto;
+  padding-right: 85px;
+}
+.about-sec .about-sec-wrapper .content-col .sec-title {
+  margin-bottom: 35px;
+  color: #fff;
+}
+.about-sec .about-sec-wrapper .content-col p {
+  color: #fff;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 30px;
+  line-height: 26px;
+}
+.about-sec .about-sec-wrapper .video-col {
+  flex: 0 0 auto;
+}
+.about-sec .about-sec-wrapper .video-col .video-block {
+  width: 715px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 1.603;
+}
+.about-sec .about-sec-wrapper .video-col .video-block .abt-video {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-sec .about-sec-wrapper .video-col .video-block .play-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  width: 81px;
+  height: 81px;
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px) brightness(14);
+  font-size: 28px;
+  color: #fff;
+  background: rgb(127, 152, 180);
+  background: linear-gradient(125deg, rgb(127, 152, 180) 0%, rgb(72, 87, 116) 100%);
+}
+.about-sec .about-sec-wrapper .video-col .video-block:hover .play-btn {
+  display: block !important;
+}
+
+@media (max-width: 1679px) {
+  .about-sec {
+    padding: 140px 0 100px;
+  }
+  .about-sec .about-sec-wrapper .content-col p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .about-sec .about-sec-wrapper .content-col {
+    padding-right: 70px;
+  }
+}
+@media (max-width: 1441px) {
+  .about-sec {
+    padding: 110px 0 100px;
+  }
+}
+@media (max-width: 1400px) {
+  .about-sec .about-sec-wrapper .content-col p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+  .about-sec .about-sec-wrapper .content-col .sec-title {
+    margin-bottom: 25px;
+  }
+  .about-sec .about-sec-wrapper .content-col {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .about-sec .about-sec-wrapper .video-col {
+    width: 50%;
+  }
+  .about-sec .about-sec-wrapper .video-col .video-block {
+    width: 100%;
+    height: 380px;
+  }
+  .about-sec .about-sec-wrapper .video-col .video-block .play-btn {
+    width: 75px;
+    height: 75px;
+    font-size: 20px;
+  }
+  .about-sec {
+    padding: 85px 0 70px;
+  }
+}
+@media (max-width: 991px) {
+  .about-sec .about-sec-wrapper {
+    flex-wrap: wrap;
+  }
+  .about-sec .about-sec-wrapper .content-col {
+    width: 100%;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 25px;
+  }
+  .about-sec .about-sec-wrapper .video-col {
+    width: 100%;
+  }
+  .about-sec .about-sec-wrapper .video-col .video-block {
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .about-sec {
+    padding: 60px 0 50px;
+  }
+}
+@media (max-width: 579px) {
+  .about-sec .about-sec-wrapper .video-col .video-block .play-btn {
+    width: 65px;
+    height: 65px;
+    font-size: 18px;
+  }
+  .about-sec {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 479px) {
+  .about-sec .about-sec-wrapper .video-col .video-block .play-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+body, html {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+.heading {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+}
+.heading span {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--primary);
+}
+h1 span.sub,
+h2 span.sub,
+h3 span.sub,
+h4 span.sub,
+h5 span.sub,
+h6 span.sub,
+.h1 span.sub,
+.h2 span.sub,
+.h3 span.sub,
+.h4 span.sub,
+.h5 span.sub,
+.h6 span.sub {
+  color: var(--secondary);
+}
+
+@media (min-width: 1600px) {
+  .container-custom {
+    max-width: 1400px;
+  }
+}
+
+.page-wrap {
+  margin-top: 154px;
+}
+@media (max-width: 1679px) {
+  .page-wrap {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 1281px) {
+  .page-wrap {
+    margin-top: 135px;
+  }
+}
+@media (max-width: 1199px) {
+  .page-wrap {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .page-wrap {
+    margin-top: 120px;
+  }
+}

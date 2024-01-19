@@ -1,0 +1,477 @@
+@import 'partials';
+.heading-sec{
+    .title{
+        text-align: center;
+        font-family: $title_font;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 60px;
+        letter-spacing: 0px;
+        color: #2D3D76;
+        padding-bottom: 10px;
+        @media ($sm-1679){
+            font-size: 30px; 
+            padding-bottom: 0px;
+        }
+        @media ($sm-1441){
+            font-size: 28px;
+        }
+        @media ($sm-1281){
+            font-size: 24px;
+            line-height: 40px;
+        }
+        @media ($sm-991){
+            font-size: 22px;
+            line-height: 35px;
+        }
+    }
+    .content{
+        p{
+            text-align: center;
+            font-family: $primary_font;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 35px;
+            letter-spacing: 0px;
+            color: #2D3D76;
+            margin: 0;
+            @media ($sm-1679){
+                font-size: 17px; 
+                line-height: 27px;
+            }
+            @media ($sm-1441){
+                font-size: 16px;
+                line-height: 26px;
+            }
+            @media ($sm-1281){
+                font-size: 14px;
+                line-height: 24px;
+            }
+          
+        }
+
+    }
+        
+}
+
+.practice-area{
+    padding: 80px 0px;
+    @media ($sm-1679){
+        padding: 60px 0px; 
+    }
+    @media ($sm-1441){
+        padding: 60px 0px; 
+    }
+
+    @media ($sm-991){
+        padding: 50px 0px; 
+    }
+    .heading-sec {
+        width: 84%;
+        margin: 0 auto;
+        .content{
+            margin-bottom: 40px;
+        }
+    }
+    
+    
+    .prcatice-inner{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+        @media ($sm-579){
+            grid-template-columns: repeat(1,1fr) !important;
+        }
+        @media ($sm-991){
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+        }
+       
+        .box{
+            background: #FCFDFF 0% 0% no-repeat padding-box;
+            border: 1px solid #D9E2FF;
+            border-radius: 21px;
+            padding: 100px 36px;
+            text-align: center;
+            @media ($sm-1679){
+                padding: 80px 36px;
+            }
+            @media ($sm-1441){
+                padding: 60px 36px; 
+            }
+        
+            @media ($sm-1281){
+                padding: 20px 20px; 
+            }
+            .icon-sec{
+                padding-bottom: 10px;
+                width: 70px;
+                height: 70px;
+                margin: 0 auto;
+                @media ($sm-1679){
+                    width: 60px;
+                    height: 60px;
+                }
+            
+                @media ($sm-991){
+                    width: 50px;
+                    height: 50px; 
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .subtitle{
+                text-align: center;
+                font-family: $title_font;
+                font-weight: 600;
+                font-size: 23px;
+                line-height: 36px;
+                letter-spacing: 0px;
+                color: #2D3D76;
+                @media ($sm-1679){
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+                @media ($sm-1441){
+                    font-size: 19px;
+                }
+            
+                @media ($sm-1281){
+                    font-size: 18px;
+                }
+            }
+            .box-content{
+                padding-top: 10px;
+
+                p{
+                    text-align: center;
+                    letter-spacing: 0px;
+                    color: #2D3D76;
+                    font-family: $primary_font;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    @media ($sm-1679){
+                        font-size: 15px;
+                        line-height: 21px;
+                    }
+                  
+                    @media ($sm-1281){
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+               
+            .line{
+                margin-top: 15px !important;
+                width: 99px;
+                margin: 0 auto;
+                background-color: #2D3D76;
+                height: 3px;
+            }
+        }
+    }
+}
+
+
+.meet-our-team{
+  
+    padding-bottom: 80px;
+   
+    @media ($sm-1679){
+        padding-bottom: 60px; 
+    }
+    @media ($sm-1441){
+        padding-bottom: 60px; 
+    }
+
+    @media ($sm-991){
+        padding-bottom:50px; 
+    }
+    .heading-sec{
+        width: 59%;
+        margin: 0 auto;
+        @media ($sm-991){
+            width: 100%;
+        
+        }
+        .content {
+            margin-bottom: 40px;
+        }
+    } 
+    .team-box {
+        margin: 0 20px;
+        .team-img{
+            position: relative;
+        }
+        .details{
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            padding: 20px;
+            .name{
+         
+                font-family: $title_font;
+                font-weight: 600;        
+                font-size: 25px;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                @media ($sm-1679){
+                    font-size: 20px;
+               
+                }
+                @media ($sm-1441){
+                    font-size: 18px;
+               
+                }
+      
+                @media ($sm-1281){
+                    font-size: 17px;
+                    line-height: 24px;
+                }
+                @media ($sm-991){
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+            .position{
+                font-family: $primary_font;
+                font-size: 17px;
+                font-weight: 300;
+                @media ($sm-1679){
+                    font-size: 16px;
+               
+                }
+                @media ($sm-1441){
+                    font-size: 14px;
+               
+                }
+      
+                @media ($sm-1281){
+                    font-size: 14px;
+                 
+                }
+                @media ($sm-991){
+                    font-size: 12px;
+                
+                }
+           
+               
+            }
+        }
+    }
+   
+}
+
+.team-list{
+    background-image: url(../img/our-team-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.team-slider{
+
+    .slick-slide
+    
+    {
+        .team-img{
+            @media ($sm-479){
+                height: 430px !important;
+            
+            }
+            @media ($sm-579){
+                height: 300px;
+            
+            }
+        }
+        img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 20px;
+        object-fit: cover;
+        border-radius: 10px;
+        @media ($sm-991){
+           object-fit: cover;
+           border-radius: 20px;
+        
+        }
+    }
+    }
+    
+      .slick-dots {
+        display: flex !important;
+        justify-content: center;
+        
+        margin: 0;
+        padding: 1rem 0;
+        
+        list-style-type: none;
+        
+            li {
+                margin: 0 0.25rem;
+            }
+        
+            button {
+                display: block;
+                width: 126px;
+                height: 4px;
+                padding: 0;
+                border-radius: 2px;
+                border: none;
+            
+                background-color: #D1DDFF;
+                
+                text-indent: -9999px;
+                @media ($sm-1679){
+                    width: 100px;
+               
+                }
+                @media ($sm-1441){
+                    width: 90px;
+               
+                }
+      
+                @media ($sm-1281){
+                    width: 40px;
+                 
+                }
+                @media ($sm-991){
+                    width: 20px;
+                
+                }
+            }
+        
+            li.slick-active button {
+                background-color: #2D3D76;
+            }
+        
+    }
+
+    .btn-arrow{
+        background-color: transparent;
+        border: 1px solid #C6D3FF;
+        width: 54px;
+       height: 54px;
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all ease-in-out 0.1s;
+        font-size: 6px;
+        font-family: $title_font;
+        position:absolute;
+        &:hover{
+            background-color: #2D3D76;
+            border: 1px solid #2D3D76;
+
+            &:before{
+                border-top: 1px solid #C6D3FF;
+                border-left: 1px solid #C6D3FF;  
+            }
+        }
+        @media ($sm-1679){
+            width: 34px;
+            height: 34px;
+       
+        }
+        @media ($sm-1441){
+            width: 34px;
+            height: 34px;
+       
+        }
+    
+        @media ($sm-1281){
+            width: 24px;
+            height: 24px;
+         
+        }
+
+        &:before{
+                width: 10px;
+              height: 10px;
+              border-top: 1px solid #2D3D76;
+              border-left: 1px solid #2D3D76;
+                margin: 0 auto;
+                content: "";
+                display: block;
+                transform: rotate(-45deg);
+                @media ($sm-1679){
+                    width: 8px;
+                    height: 8px;
+                }
+                @media ($sm-1281){
+                    width: 8px;
+                    height: 8px;
+                }
+               
+          
+        }
+       
+    }
+    .slick-prev{
+        left: -53px;
+        top: 157px;
+        @media ($sm-1679){
+            left: -30px;
+       
+        }
+        @media ($sm-1441){
+           left: -30px;
+       
+        }
+    
+        @media ($sm-1281){
+            left: -30px;
+         
+        }
+        @media ($sm-767){
+    
+        right: 59px;
+        left: unset;
+        top: -28px;
+    
+        
+        }
+        
+    }
+    
+    
+    .slick-next{
+        right: -59px;
+        top: 157px;
+        transform: rotate(180deg);
+        @media ($sm-1679){
+            right: -30px;
+       
+        }
+        @media ($sm-1441){
+           right: -30px;
+       
+        }
+    
+        @media ($sm-1281){
+            right: -30px;
+         
+        }
+        @media ($sm-767){
+    
+        top: -28px;
+        right: 29px;
+        }
+    }
+}
+  
+// .slick-prev{
+//     width: 0;
+//     height: 0;
+//     border-top: 10px solid transparent; /* Adjust size as needed */
+//     border-bottom: 10px solid transparent; /* Adjust size as needed */
+//     border-left: 15px solid #000; /* Arrow color */
+//     cursor: pointer; 
+// }
+

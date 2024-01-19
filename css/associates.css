@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+img {
+  max-width: 100%;
+}
+
+.sec-title {
+  color: #2D3D76;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.assoc-sec {
+  padding: 120px 0;
+}
+.assoc-sec .sec-title {
+  text-align: center;
+  color: #2D3D76;
+  line-height: 60px;
+}
+.assoc-sec .sec-title span {
+  font-weight: 400;
+}
+.assoc-sec .qst-sec {
+  margin-top: 75px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+.assoc-sec .qst-sec::after {
+  content: "";
+  width: 270px;
+  height: 430px;
+  position: absolute;
+  top: -20px;
+  left: auto;
+  right: 35%;
+  z-index: -1;
+  margin: auto;
+  background-image: url("../img/qst-bg.svg");
+  background-repeat: no-repeat;
+}
+.assoc-sec .qst-sec .qst-col-left {
+  flex: 1 1 auto;
+  padding-right: 50px;
+}
+.assoc-sec .qst-sec .qst-col-right {
+  flex: 0 0 auto;
+}
+.assoc-sec .qst-sec .qst-block ul {
+  margin: 0;
+  padding-left: 15px;
+}
+.assoc-sec .qst-sec .qst-block ul li {
+  color: #2D3D76;
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+}
+.assoc-sec .qst-sec .qst-block ul li::marker {
+  color: "Inter", sans-serif;
+  font-size: 20px;
+}
+.assoc-sec .qst-sec .qst-block ul li:last-child {
+  margin-bottom: 0;
+}
+.assoc-sec .qst-sec .qst-card-block {
+  width: 495px;
+}
+.assoc-sec .qst-sec .qst-card-block .qst-card {
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #D9E2FF;
+  border-radius: 16px;
+  padding: 30px 50px;
+  background-color: #FCFDFF;
+  font-family: "IBM Plex Serif", serif;
+  color: #2D3D76;
+  font-weight: 600;
+  font-size: 22px;
+}
+.assoc-sec .qst-sec .qst-card-block .qst-card span {
+  color: #228CE9;
+}
+.assoc-sec .book-sec-cover {
+  border: 1px solid #D9E2FF;
+  border-radius: 56px;
+  background-color: #FCFDFF;
+  display: flex;
+  align-items: center;
+  padding: 18px 40px;
+}
+.assoc-sec .book-sec-cover .text-block {
+  font-size: 21px;
+  flex: 1 1 auto;
+  color: #2D3D76;
+  font-weight: 600;
+  font-family: "IBM Plex Serif", serif;
+}
+.assoc-sec .book-sec-cover .text-block span {
+  font-weight: 400;
+}
+.assoc-sec .book-sec-cover .btn-block {
+  flex: 0 0 auto;
+}
+.assoc-sec .book-sec-cover .btn-block .book-btn {
+  padding: 10px 40px;
+  background-color: #2D3D76;
+  color: #fff;
+  display: inline-block;
+  border-radius: 23px;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+.assoc-sec .book-sec-cover .btn-block .book-btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-color: rgba(45, 61, 118, 0.9);
+  transition: 0s all ease;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
+  z-index: -1;
+}
+.assoc-sec .book-sec-cover .btn-block .book-btn:hover:after {
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  opacity: 0;
+  transition: 0.8s all ease;
+}
+
+@media (max-width: 1679px) {
+  .assoc-sec {
+    padding: 80px 0;
+  }
+  .assoc-sec .sec-title {
+    line-height: normal;
+  }
+  .sec-title {
+    font-size: 32px;
+  }
+  .assoc-sec .qst-sec .qst-block ul li {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .assoc-sec .qst-sec .qst-card-block .qst-card {
+    font-size: 19px;
+  }
+  .assoc-sec .qst-sec::after {
+    background-size: 100%;
+    width: 240px;
+    right: 39%;
+  }
+  .assoc-sec .book-sec-cover .text-block {
+    font-size: 18px;
+  }
+  .assoc-sec .book-sec-cover .btn-block .book-btn {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1441px) {
+  .assoc-sec {
+    padding: 60px 0;
+  }
+  .sec-title {
+    font-size: 28px;
+  }
+  .assoc-sec .qst-sec {
+    margin-top: 50px;
+  }
+  .assoc-sec .qst-sec .qst-card-block {
+    width: 440px;
+  }
+  .assoc-sec .qst-sec .qst-card-block .qst-card {
+    padding: 25px 40px;
+    font-size: 18px;
+  }
+  .assoc-sec .qst-sec .qst-block ul li {
+    margin-bottom: 20px;
+  }
+  .assoc-sec .qst-sec::after {
+    width: 210px;
+    right: 40%;
+  }
+  .assoc-sec .book-sec-cover .text-block {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+  .assoc-sec .book-sec-cover .btn-block .book-btn {
+    padding: 10px 30px;
+  }
+  .assoc-sec .qst-sec {
+    padding-bottom: 30px;
+  }
+  .assoc-sec .book-sec-cover .btn-block .book-btn {
+    font-size: 15px;
+  }
+  .assoc-sec .book-sec-cover {
+    padding: 14px 35px;
+  }
+  .sec-title {
+    font-size: 29px;
+  }
+  .assoc-sec .qst-sec .qst-block ul li {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .assoc-sec .qst-sec .qst-col-left {
+    flex: 1 1 auto;
+    padding-right: 30px;
+  }
+  .assoc-sec .qst-sec .qst-card-block {
+    width: 370px;
+  }
+  .assoc-sec .qst-sec .qst-card-block .qst-card {
+    padding: 25px 30px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 991px) {
+  .assoc-sec .qst-sec .qst-block ul li {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .assoc-sec .book-sec-cover .text-block {
+    font-size: 14px;
+    padding-right: 20px;
+  }
+  .assoc-sec .qst-sec .qst-card-block {
+    width: 100%;
+  }
+  .assoc-sec .qst-sec .qst-col-right {
+    width: 40%;
+  }
+  .assoc-sec .qst-sec .qst-card-block .qst-card {
+    padding: 22px 20px;
+    font-size: 16px;
+  }
+  .sec-title {
+    font-size: 25px;
+  }
+  .assoc-sec .qst-sec::after {
+    width: 155px;
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .assoc-sec .qst-sec::after {
+    display: none;
+  }
+  .qst-sec .qst-wrapper {
+    flex-wrap: wrap;
+  }
+  .assoc-sec .qst-sec .qst-col-left {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 25px;
+  }
+  .assoc-sec .qst-sec .qst-block ul li {
+    margin-bottom: 10px;
+  }
+  .assoc-sec .qst-sec .qst-col-right {
+    width: 100%;
+  }
+  .assoc-sec .book-sec-cover {
+    flex-wrap: wrap;
+    border-radius: 25px;
+    padding: 20px 30px;
+  }
+  .assoc-sec .book-sec-cover .text-block {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  .assoc-sec .book-sec-cover .btn-block {
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .assoc-sec .sec-title br {
+    display: none;
+  }
+  .assoc-sec .qst-sec {
+    margin-top: 25px;
+  }
+  .sec-title {
+    font-size: 22px;
+  }
+  .assoc-sec .book-sec-cover .btn-block .book-btn {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 579px) {
+  .sec-title {
+    font-size: 20px;
+  }
+  .assoc-sec .qst-sec .qst-block ul {
+    padding-left: 25px;
+  }
+  .assoc-sec {
+    padding: 35px 0 40px;
+  }
+  .assoc-sec .qst-sec .qst-card-block .qst-card {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+  .assoc-sec .book-sec-cover {
+    padding: 20px 15px;
+  }
+}

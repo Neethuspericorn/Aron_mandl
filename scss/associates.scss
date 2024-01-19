@@ -1,0 +1,328 @@
+@import 'partials';
+$primary-blue: #2D3D76;
+img{
+    max-width: 100%;
+}
+.sec-title{
+    color: $primary-blue;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: $title_font;
+}
+.assoc-sec{
+    padding: 120px 0;
+    .sec-title{
+        text-align: center;
+        color: $primary-blue;
+        line-height: 60px;
+        span{
+            font-weight: 400;
+        }
+    }
+    .qst-sec{
+        margin-top: 75px;
+        padding-bottom: 50px;
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: '';
+            width: 270px;
+            height: 430px;
+            position: absolute;
+            top: -20px;
+            left: auto;
+            right: 35%;
+            z-index: -1;
+            margin: auto;
+            background: {
+                image: url('../img/qst-bg.svg');
+                repeat: no-repeat;
+            };
+        }
+        .qst-col-left{
+            flex: 1 1 auto;
+            padding-right: 50px;
+        }
+        .qst-col-right{
+            flex: 0 0 auto;
+        }
+        .qst-block{
+            ul{
+                margin: 0;
+                padding-left: 15px;
+                li{
+                    color: $primary-blue;
+                    font-size: 18px;
+                    margin-bottom: 40px;
+                    font-family: $primary_font;
+                    &::marker{
+                        color: $primary_font;
+                        font-size: 20px;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .qst-card-block{
+            width: 495px;
+            .qst-card{
+                margin-bottom: 20px;
+                width: 100%;
+                border: 1px solid #D9E2FF;
+                border-radius: 16px;
+                padding: 30px 50px;
+                background-color: #FCFDFF;
+                font-family: $title_font;
+                color: $primary-blue;
+                font-weight: 600;
+                font-size: 22px;
+                span{
+                    color: #228CE9;
+                }
+            }
+        }
+    }
+    .book-sec-cover{
+        border: 1px solid #D9E2FF;
+        border-radius: 56px;
+        background-color: #FCFDFF;
+        display: flex;
+        align-items: center;
+        padding: 18px 40px;
+        .text-block{
+            font-size: 21px;
+            flex: 1 1 auto;
+            color: $primary-blue;
+            font-weight: 600;
+            font-family: $title_font;
+            span{
+                font-weight: 400;
+            }
+        }
+        .btn-block{
+            flex: 0 0 auto;
+            .book-btn{
+                padding: 10px 40px;
+                background-color: $primary-blue;
+                color: #fff;
+                display: inline-block;
+                border-radius: 23px;
+                font-size: 17px;
+                font-family: $primary_font;
+                text-decoration: none;
+                position: relative;
+                z-index: 1;
+                &:after {
+                    content:"";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 1;
+                    background-color: rgba($color: $primary-blue, $alpha: 0.9);
+                    transition: 0s all ease;
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 23px;
+                    z-index: -1;
+                }
+                &:hover{
+                    &:after {
+                        transform: scale(1.4);
+                        -webkit-transform: scale(1.4);
+                        opacity:0;
+                        transition: .8s all ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ($sm-1679){
+    .assoc-sec {
+        padding: 80px 0;
+        .sec-title{
+            line-height: normal;
+        }
+    }
+    .sec-title{
+        font-size: 32px;
+    }
+    .assoc-sec .qst-sec .qst-block ul li{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .assoc-sec .qst-sec .qst-card-block .qst-card{
+        font-size: 19px;
+    }
+    .assoc-sec .qst-sec::after{
+        background-size: 100%;
+        width: 240px;
+        right: 39%;
+    }
+    .assoc-sec .book-sec-cover .text-block {
+        font-size: 18px;
+    }
+    .assoc-sec .book-sec-cover .btn-block .book-btn{
+        font-size: 16px;
+    }
+}
+
+@media ($sm-1441){
+    .assoc-sec {
+        padding: 60px 0;
+    }
+    .sec-title {
+        font-size: 28px;
+    }
+    .assoc-sec .qst-sec {
+        margin-top: 50px;
+    }
+    .assoc-sec .qst-sec .qst-card-block {
+        width: 440px;
+    }
+    .assoc-sec .qst-sec .qst-card-block .qst-card {
+        padding: 25px 40px;
+        font-size: 18px;
+    }
+    .assoc-sec .qst-sec .qst-block ul li {
+        margin-bottom: 20px;
+    }
+    .assoc-sec .qst-sec::after {
+        width: 210px;
+        right: 40%;
+    }
+    .assoc-sec .book-sec-cover .text-block {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+    .assoc-sec .book-sec-cover .btn-block .book-btn {
+        padding: 10px 30px;
+    }
+    .assoc-sec .qst-sec {
+        padding-bottom: 30px;
+    }
+    .assoc-sec .book-sec-cover .btn-block .book-btn {
+        font-size: 15px;
+    }
+    .assoc-sec .book-sec-cover {
+        padding: 14px 35px;
+    }
+    .sec-title {
+        font-size: 29px;
+    }
+    .assoc-sec .qst-sec .qst-block ul li {
+        margin-bottom: 20px;
+    }
+}
+@media ($sm-1199){
+    .assoc-sec .qst-sec .qst-col-left {
+        flex: 1 1 auto;
+        padding-right: 30px;
+    }
+    .assoc-sec .qst-sec .qst-card-block {
+        width: 370px;
+    }
+    .assoc-sec .qst-sec .qst-card-block .qst-card {
+        padding: 25px 30px;
+        font-size: 17px;
+    }
+}
+
+@media ($sm-991){
+    .assoc-sec .qst-sec .qst-block ul li {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .assoc-sec .book-sec-cover .text-block {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+    .assoc-sec .qst-sec .qst-card-block {
+        width: 100%;
+    }
+    .assoc-sec .qst-sec .qst-col-right {
+        width: 40%;
+    }
+    .assoc-sec .qst-sec .qst-card-block .qst-card {
+        padding: 22px 20px;
+        font-size: 16px;
+    }
+    .sec-title {
+        font-size: 25px;
+    }
+    .assoc-sec .qst-sec::after {
+        width: 155px;
+        height: 300px;
+    }
+}
+@media ($sm-767){
+    .assoc-sec .qst-sec::after{
+        display: none;        
+    }
+    .qst-sec{
+        .qst-wrapper{
+            flex-wrap: wrap;
+        }
+    }
+    .assoc-sec .qst-sec .qst-col-left{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+    .assoc-sec .qst-sec .qst-block ul li {
+        margin-bottom: 10px;
+    }
+    .assoc-sec .qst-sec .qst-col-right{
+        width: 100%;
+    }
+    .assoc-sec .book-sec-cover{
+        flex-wrap: wrap;
+        border-radius: 25px;
+        padding: 20px 30px;
+    }
+    .assoc-sec .book-sec-cover .text-block{
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+    .assoc-sec .book-sec-cover .btn-block{
+        width: 100%;
+        padding-top: 15px;
+        text-align: center;
+    }
+    .assoc-sec .sec-title br{
+        display: none;
+    }
+    .assoc-sec .qst-sec {
+        margin-top: 25px;
+    }
+    .sec-title {
+        font-size: 22px;
+    }
+    .assoc-sec .book-sec-cover .btn-block .book-btn {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+}
+@media ($sm-579){
+    .sec-title {
+        font-size: 20px;
+    }
+    .assoc-sec .qst-sec .qst-block ul {
+        padding-left: 25px;
+    }
+    .assoc-sec {
+        padding: 35px 0 40px;
+    }
+    .assoc-sec .qst-sec .qst-card-block .qst-card {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    .assoc-sec .book-sec-cover {
+        padding: 20px 15px;
+    }
+}

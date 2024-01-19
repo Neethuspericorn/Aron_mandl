@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.home-banner {
+  background: url(../img/banner_image.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 153px);
+}
+@media (max-width: 1400px) {
+  .home-banner {
+    height: auto;
+  }
+}
+.home-banner .banner-slider {
+  height: 100%;
+}
+.home-banner .banner-slider .slick-list, .home-banner .banner-slider .slick-track, .home-banner .banner-slider .slick-slide {
+  height: 100%;
+}
+.home-banner .banner-slider .container {
+  height: 100%;
+}
+.home-banner .bnr-wrp {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+@media (max-width: 1400px) {
+  .home-banner .bnr-wrp {
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .home-banner .bnr-wrp {
+    flex-direction: column;
+  }
+}
+.home-banner .banner-img {
+  max-width: 678px;
+  margin-left: 79px;
+}
+@media (max-width: 1679px) {
+  .home-banner .banner-img {
+    max-width: 465px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1581px) {
+  .home-banner .banner-img {
+    max-width: 420px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1481px) {
+  .home-banner .banner-img {
+    max-width: 385px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1400px) {
+  .home-banner .banner-img {
+    max-width: 330px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .home-banner .banner-img {
+    max-width: 290px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .home-banner .banner-img {
+    max-width: 220px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+.home-banner .banner-img img {
+  max-width: 590px;
+  height: auto;
+}
+@media (max-width: 1800px) {
+  .home-banner .banner-img img {
+    max-width: 500px;
+  }
+}
+@media (max-width: 1679px) {
+  .home-banner .banner-img img {
+    max-width: 100%;
+  }
+}
+.home-banner .banner-desc {
+  max-width: 755px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  flex: 0 0 auto;
+}
+@media (max-width: 1679px) {
+  .home-banner .banner-desc {
+    max-width: 878px;
+    flex: 1;
+  }
+}
+@media (max-width: 1199px) {
+  .home-banner .banner-desc {
+    max-width: 878px;
+  }
+}
+@media (max-width: 991px) {
+  .home-banner .banner-desc {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}
+.home-banner .banner-desc .heading {
+  font: normal normal 700 38px/55px "IBM Plex Serif", serif;
+  margin-bottom: 0px;
+}
+@media (max-width: 1679px) {
+  .home-banner .banner-desc .heading {
+    font: normal normal 700 30px/46px "IBM Plex Serif", serif;
+  }
+}
+@media (max-width: 1441px) {
+  .home-banner .banner-desc .heading {
+    font: normal normal 700 28px/44px "IBM Plex Serif", serif;
+  }
+}
+@media (max-width: 1281px) {
+  .home-banner .banner-desc .heading {
+    font: normal normal 700 27px/42px "IBM Plex Serif", serif;
+  }
+}
+@media (max-width: 1199px) {
+  .home-banner .banner-desc .heading {
+    font: normal normal 700 25px/41px "IBM Plex Serif", serif;
+  }
+}
+@media (max-width: 1199px) {
+  .home-banner .banner-desc .heading {
+    font: normal normal 700 20px/36px "IBM Plex Serif", serif;
+  }
+}
+@media (max-width: 991px) {
+  .home-banner .banner-desc .heading {
+    font: normal normal 700 19px/34px "IBM Plex Serif", serif;
+  }
+}
+@media (max-width: 767px) {
+  .home-banner .banner-desc .heading {
+    font: normal normal 700 18px/30px "IBM Plex Serif", serif;
+  }
+}
+.home-banner .banner-desc .heading span {
+  display: block;
+}
+.home-banner .banner-desc .bnr-cta {
+  border: 1px solid #fff;
+  border-radius: 28px;
+  padding: 10px 49px;
+  margin-top: 45px;
+  text-decoration: none;
+  font: normal normal 500 22px/26px "Inter", sans-serif;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.home-banner .banner-desc .bnr-cta span {
+  position: relative;
+  z-index: 1;
+}
+.home-banner .banner-desc .bnr-cta::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0px;
+  transition: all 0.5s linear;
+  transform: translateX(-100%);
+  top: 0;
+}
+.home-banner .banner-desc .bnr-cta:hover {
+  color: #22225B;
+}
+.home-banner .banner-desc .bnr-cta:hover::after {
+  transform: translateX(0);
+}
+@media (max-width: 1679px) {
+  .home-banner .banner-desc .bnr-cta {
+    font: normal normal 500 18px/22px "Inter", sans-serif;
+    margin-top: 30px;
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 1481px) {
+  .home-banner .banner-desc .bnr-cta {
+    font: normal normal 500 16px/20px "Inter", sans-serif;
+    margin-top: 25px;
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 1281px) {
+  .home-banner .banner-desc .bnr-cta {
+    font: normal normal 500 15px/19px "Inter", sans-serif;
+    margin-top: 20px;
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .home-banner .banner-desc .bnr-cta {
+    font: normal normal 500 14px/18px "Inter", sans-serif;
+    margin-top: 20px;
+    padding: 10px 40px;
+  }
+}
