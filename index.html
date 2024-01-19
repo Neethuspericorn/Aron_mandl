@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <header class="fixed-top">
+  <header class="fixed-top" id="top">
     <div class="call-top">
       <a class="tel-link" href="tel:+1(732) 851-1200">Call Us Today: (732) 851-1200</a>
     </div>
@@ -525,7 +525,10 @@
     </section>
   </main>
   <footer>
-    <div class="container container-custom container-padding">
+    <div class="container container-custom container-padding position-relative">
+      <div class="scroll-top">
+        <a href="#"><img src="img/up-arrow.svg" alt="up arrow"></a>
+      </div>
       <div class="ftr-inner">
         <div class="ftr-logo">
           <a href="#" class="ftr-brand"><img class="img-fluid" src="/img/footer-logo.svg" alt="Aron Mandl logo"></a>
@@ -589,7 +592,7 @@
         </div>
       </div>
       <div class="copy-right-blk">
-        © Copyright Immigration Law Center, Inc. 2024 | Powered by Lorem ipusm
+        © Copyright Immigration Law Center, Inc. <span id="copyright-year">2024</span> | Powered by Lorem ipusm
       </div>
     </div>
   </footer>
