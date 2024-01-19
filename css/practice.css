@@ -338,12 +338,14 @@
   height: 100%;
   display: block;
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 @media (max-width: 991px) {
   .team-slider .slick-slide img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 20px;
   }
 }
@@ -581,7 +583,8 @@
   }
 }
 .testimonial-sec .quote-img img {
-  object-fit: contain !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 .testimonial-sec .details1.testmonial-detail {
   display: flex;

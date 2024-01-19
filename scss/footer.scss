@@ -3,36 +3,97 @@ footer{
     background-color: $navBtn;
     padding: 74px 0 0;
     color: $white;
+    position: relative;
+    @media ($sm-1679){
+        padding: 50px 0 0;
+    }
+    @media ($sm-1481){
+        padding: 40px 0 0;
+    }
     .ftr-inner{
         max-width: 100%;
         display: flex;
         flex-direction: column;
         &.mt-inner{
             margin-top: 52px;
+            @media ($sm-1679){
+                margin-top: 35px;
+            }
+            @media ($sm-1481){
+                margin-top: 30px;
+            }
+            @media ($sm-1281){
+                margin-top: 20px;
+            }
         }
         .compine-blk{
             display: flex;
+            @media ($sm-991){
+                flex-direction: column;
+            }
         }
         .ftr-logo{
             margin-bottom: 35px;
+            @media ($sm-1679){
+                margin-bottom: 30px;
+            }
+            @media ($sm-1481){
+                margin-bottom: 20px;
+            }
             .ftr-brand{
                 display: block;
                 max-width: 95px;
+                @media ($sm-1679){
+                    max-width: 85px;
+                }
+                @media ($sm-1481){
+                    max-width: 75px;
+                }
+                @media ($sm-1281){
+                    max-width: 70px;
+                }
             }
         }
         .ftr-left{
             max-width: 462px;
+            @media ($sm-1679){
+                max-width: 375px;
+            }
+            @media ($sm-1481){
+                max-width: 300px;
+            }
+            @media ($sm-991){
+                order: 2;
+                max-width: 100%;
+            }
             .ftr-txt{
                 max-width: 100%;
                 font: normal normal normal 16px/31px $primary_font;
                 letter-spacing: 0.48px;
+                @media ($sm-1679){
+                    font: normal normal normal 15px/30px $primary_font;
+                }
+                @media ($sm-1679){
+                    font: normal normal normal 14px/22px $primary_font;
+                }
             }
             .social-icon-set{
                 max-width: 235px;
                 display: flex;
                 column-gap: 15px;
+                justify-content: center;
                 .icon{
                     display: flex;
+                    transition: all 0.5s linear;
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
+                    @media ($sm-991){
+                        max-width: 30px;
+                    }
+                }
+                @media ($sm-991){
+                    margin: 30px auto 0;
                 }
             }
         }
@@ -42,23 +103,56 @@ footer{
             margin-left: auto;
             display: flex;
             justify-content: end;
+            @media ($sm-991){
+                max-width: 100%;
+                justify-content: flex-start;
+            }
             .ftr-nav{
                 display: flex;
                 width: 100%;
+                justify-content: flex-end;
+                @media ($sm-991){
+                    margin-left: 0px;
+                    justify-content: flex-start;
+                }
                 .ftr-menu{
                     margin: 0;
                     padding: 0;
                     display: flex;
                     column-gap: 60px;
+                    @media ($sm-1679){
+                        column-gap: 50px;
+                    }
+                    @media ($sm-1481){
+                        column-gap: 40px;
+                    }
+                    @media ($sm-1281){
+                        column-gap: 30px;
+                    }
+                    @media ($sm-1199){
+                        column-gap: 20px;
+                    }
+                    @media ($sm-767){
+                        flex-direction: column;
+                    }
                     li{
                         list-style: none;
                         display: flex;
+                        @media ($sm-991){
+                            margin-bottom: 10px;
+                        }
                         a{
                             &.ftr-link{
                                 color: $white;
                                 text-decoration: none;
                                 font: normal normal normal 16px/20px $primary_font;
                                 flex: 1;
+                                @media ($sm-1679){
+                                    font: normal normal normal 15px/19px $primary_font;
+                                }
+                                @media ($sm-1481){
+                                    font: normal normal normal 14px/18px $primary_font;
+                                }
                             }
                         }
                     }
@@ -67,12 +161,43 @@ footer{
             .blk-wrp{
                 display: flex;
                 column-gap: 94px;
+                @media ($sm-1679){
+                    column-gap: 70px;
+                }
+                @media ($sm-1481){
+                    column-gap: 50px;
+                }
+                @media ($sm-1281){
+                    column-gap:40px;
+                }
+                @media ($sm-1199){
+                    column-gap:35px;
+                }
+                @media ($sm-991){
+                    column-gap:30px;
+                }
+                @media ($sm-579){
+                    column-gap: 0;
+                    flex-direction: column;
+                }
             }
             .ftr-blks{
                 display: flex;
                 max-width: 248px;
+                @media ($sm-579){
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                }
+                &:last-child{
+                    @media ($sm-579){
+                        margin-bottom: 0px;
+                    }
+                }
                 p{
                     margin-bottom: 5px;
+                    @media ($sm-991){
+                        margin-bottom: 0px;
+                    }
                 }
                 .tel-link{
                     color: $white;
@@ -82,9 +207,26 @@ footer{
                     margin-right: 18px;
                     font: normal normal normal 15px/19px $primary_font;
                     flex: 0 0 auto;
+                    @media ($sm-1679){
+                        font: normal normal normal 14px/24px $primary_font;
+                    }
+                    @media ($sm-579){
+                        margin-bottom: 10px;
+                    }
                 }
                 .info{
                     font: normal normal normal 15px/25px $primary_font;
+                    @media ($sm-1679){
+                        font: normal normal normal 14px/24px $primary_font;
+                    }
+                }
+            }
+        }
+        &.one{
+            .ftr-left{
+                @media ($sm-991){
+                    order: unset;
+                    margin-bottom: 20px;
                 }
             }
         }
@@ -96,5 +238,46 @@ footer{
         border-top: 1px solid $copyBorder;
         margin-top: 60px;
         font: normal normal 300 16px/40px $primary_font;
+        .site-link{
+            color: $white;
+            text-decoration: none;
+        }
+        @media ($sm-1679){
+            font: normal normal normal 15px/20px $primary_font;
+            padding: 25px 0 30px;
+            margin-top: 40px;
+        }
+        @media ($sm-1481){
+            font: normal normal normal 14px/20px $primary_font;
+            padding: 20px 0 25px;
+            margin-top: 30px;
+        }
+        @media ($sm-1281){
+            margin-top: 25px;
+        }
+        @media ($sm-991){
+            margin-top: 20px;
+        }
+    }
+    .scroll-top{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: fixed;
+        background-color: $scrolltopbg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        right: 100px;
+        bottom: 50px;
+        z-index: 1;
+        @media ($sm-1679){
+            width: 50px;
+            height: 50px;
+        }
+        img{
+            max-width: 17px;
+        }
     }
 }
