@@ -2,10 +2,10 @@
 
 .contact{
     background: #f2f5fa url(../img/contact-bg.svg) no-repeat bottom center/contain;
-    padding-top: 170px;
+    padding-top: 130px;
     padding-bottom: 130px;
     @media ($sm-1679){
-        padding-top: 120px;
+        padding-top: 100px;
         padding-bottom: 90px;
     }
     @media ($sm-1441){
@@ -157,6 +157,16 @@
             flex-direction: column;
             justify-content: center;
             height: 100%;
+            padding-top: 0;
+            padding-bottom: 160px;
+            @media ($sm-767){
+                padding-bottom: 0;
+            }
+            @media ($lg-992){
+                justify-content: flex-start;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
         }
     }
     .form-col{
