@@ -338,14 +338,12 @@
   height: 100%;
   display: block;
   border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 @media (max-width: 991px) {
   .team-slider .slick-slide img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 20px;
   }
 }
@@ -428,8 +426,8 @@
 }
 @media (max-width: 1281px) {
   .team-slider .btn-arrow {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
   }
 }
 .team-slider .btn-arrow:before {
@@ -439,6 +437,7 @@
   border-left: 1px solid #2D3D76;
   margin: 0 auto;
   content: "";
+  margin-left: 16px;
   display: block;
   transform: rotate(-45deg);
 }
@@ -446,6 +445,7 @@
   .team-slider .btn-arrow:before {
     width: 8px;
     height: 8px;
+    margin-left: 8px;
   }
 }
 @media (max-width: 1281px) {
@@ -475,9 +475,9 @@
 }
 @media (max-width: 767px) {
   .team-slider .slick-prev {
-    right: 59px;
+    right: 75px;
     left: unset;
-    top: -28px;
+    top: -40px;
   }
 }
 .team-slider .slick-next {
@@ -502,7 +502,7 @@
 }
 @media (max-width: 767px) {
   .team-slider .slick-next {
-    top: -28px;
+    top: -40px;
     right: 29px;
   }
 }
@@ -529,6 +529,11 @@
   width: 75%;
   margin: 0 auto;
 }
+@media (max-width: 991px) {
+  .testimonial-sec .heading-sec {
+    width: 100%;
+  }
+}
 .testimonial-sec .team-box {
   margin: 0 20px;
   border: 1px solid #D8E0FF;
@@ -547,7 +552,17 @@
 }
 @media (max-width: 1281px) {
   .testimonial-sec .testimonial-content {
+    min-height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-sec .testimonial-content {
     min-height: 200px;
+  }
+}
+@media (max-width: 479px) {
+  .testimonial-sec .testimonial-content {
+    min-height: 300px;
   }
 }
 .testimonial-sec .testimonial-content p {
@@ -581,8 +596,7 @@
   }
 }
 .testimonial-sec .quote-img img {
-  -o-object-fit: contain !important;
-     object-fit: contain !important;
+  object-fit: contain !important;
 }
 .testimonial-sec .details1.testmonial-detail {
   display: flex;
@@ -650,8 +664,8 @@
 }
 .logo-section .logo-inner {
   grid-gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 991px) {
   .logo-section .logo-inner {
@@ -666,6 +680,11 @@
   .logo-section .logo-inner .logo-img {
     width: 140px;
     height: 124px;
+  }
+}
+@media (max-width: 991px) {
+  .logo-section .logo-inner .logo-img {
+    height: 90px;
   }
 }
 .logo-section .logo-inner .logo-img img {

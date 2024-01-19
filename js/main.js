@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	$(window).on("load resize",function(e){
+		 scWidth = $(window).width() ;
+	});
 	$("a").on('click', function(e) {
 		if (this.hash !== "") {
 			e.preventDefault();
@@ -6,7 +9,10 @@ $(document).ready(function(){
 	  		$('html, body').animate({
 			  scrollTop: $(menuLink).offset().top - 150
 			}, 800)
-			$('.close-menu').trigger('click');
+			if(scWidth<991){
+				$('.close-menu').trigger('click');
+			}
+			
 		  } 
 	})
     $('.banner-slider').slick({
@@ -40,7 +46,11 @@ $(document).ready(function(){
 				breakpoint: 767,
 				settings: {
 				  slidesToShow: 2,
+				  slidesToScroll: 1,
 				  dots: true,
+				  autoplay:true,
+				  autoplaySpeed:1500,
+				  arrows: false,
 				  slidesToScroll: 1
 				}
 			  },
@@ -48,7 +58,10 @@ $(document).ready(function(){
 				breakpoint: 480,
 				settings: {
 				  slidesToShow: 1,
-				  slidesToScroll: 2
+				  slidesToScroll: 2,
+				  autoplay:true,
+				  autoplaySpeed:1500,
+				  arrows: false,
 				}
 			  }
 			  // You can unslick at a given breakpoint now by adding:

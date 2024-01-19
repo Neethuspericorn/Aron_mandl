@@ -386,8 +386,8 @@
         }
     
         @media ($sm-1281){
-            width: 24px;
-            height: 24px;
+            width: 34px;
+            height: 34px;
          
         }
 
@@ -396,13 +396,16 @@
               height: 10px;
               border-top: 1px solid #2D3D76;
               border-left: 1px solid #2D3D76;
-                margin: 0 auto;
+          
+              margin: 0 auto;
                 content: "";
+                margin-left: 16px;
                 display: block;
                 transform: rotate(-45deg);
                 @media ($sm-1679){
                     width: 8px;
                     height: 8px;
+                    margin-left: 8px;
                 }
                 @media ($sm-1281){
                     width: 8px;
@@ -431,9 +434,9 @@
         }
         @media ($sm-767){
     
-        right: 59px;
-        left: unset;
-        top: -28px;
+            right: 75px;
+            left: unset;
+            top: -40px;
     
         
         }
@@ -460,7 +463,7 @@
         }
         @media ($sm-767){
     
-        top: -28px;
+        top: -40px;
         right: 29px;
         }
     }
@@ -485,6 +488,10 @@
     .heading-sec {
         width: 75%;
         margin: 0 auto;
+        @media ($sm-991){
+           
+          width: 100%;
+        }
     }
     .team-box {
         margin: 0 20px;
@@ -502,7 +509,15 @@
         }
         @media ($sm-1281){
            
+            min-height: 300px;
+        }
+        @media ($sm-767){
+           
             min-height: 200px;
+        }
+        @media ($sm-479){
+           
+            min-height: 300px;
         }
         p{
             font-family: $title_font;
@@ -613,8 +628,9 @@
     }
     .logo-inner {
         grid-gap: 20px;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
+        display: flex;
+        justify-content: space-between;
+      
         @media ($sm-991){
             display: unset;
           
@@ -625,6 +641,11 @@
             @media ($sm-1679){
                 width: 140px;
                  height: 124px;
+           
+            }
+            @media ($sm-991){
+              
+                 height: 90px;
            
             }
           

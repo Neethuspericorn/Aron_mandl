@@ -36,6 +36,10 @@ h6,
     // @media screen and ($sm-1441){
     //     max-width: 1360px;
     // }
+    @media ($sm-579){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 .page-wrap{
     margin-top: 154px;
