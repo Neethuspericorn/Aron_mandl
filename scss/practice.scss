@@ -396,13 +396,16 @@
               height: 10px;
               border-top: 1px solid #2D3D76;
               border-left: 1px solid #2D3D76;
-                margin: 0 auto;
+          
+              margin: 0 auto;
                 content: "";
+                margin-left: 16px;
                 display: block;
                 transform: rotate(-45deg);
                 @media ($sm-1679){
                     width: 8px;
                     height: 8px;
+                    margin-left: 8px;
                 }
                 @media ($sm-1281){
                     width: 8px;
@@ -613,8 +616,9 @@
     }
     .logo-inner {
         grid-gap: 20px;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
+        display: flex;
+        justify-content: space-between;
+      
         @media ($sm-991){
             display: unset;
           
