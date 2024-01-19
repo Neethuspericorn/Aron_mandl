@@ -123,8 +123,13 @@ footer .ftr-inner .ftr-left .social-icon-set .icon {
   display: flex;
 }
 @media (max-width: 991px) {
+  footer .ftr-inner .ftr-left .social-icon-set .icon {
+    max-width: 30px;
+  }
+}
+@media (max-width: 991px) {
   footer .ftr-inner .ftr-left .social-icon-set {
-    margin: 0 auto;
+    margin: 30px auto 0;
   }
 }
 footer .ftr-inner .ftr-right {

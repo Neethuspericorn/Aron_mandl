@@ -74,9 +74,12 @@ footer{
                 column-gap: 15px;
                 .icon{
                     display: flex;
+                    @media ($sm-991){
+                        max-width: 30px;
+                    }
                 }
                 @media ($sm-991){
-                    margin: 0 auto;
+                    margin: 30px auto 0;
                 }
             }
         }
