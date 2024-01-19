@@ -1,0 +1,72 @@
+@import 'partials';
+.book-consultation{
+    background-color: #F2F5FA;
+    padding: 95px 0;
+    .title-block{
+        text-align: center;
+        .sec-title{
+            margin-bottom: 25px;
+        }
+        p{
+            max-width: 1065px;
+            margin: 0 auto;
+            color: $primary;
+            font-size: 19px;
+            font-family: $primary-font;
+        }
+    }
+    .book-tab-cover{
+        padding-top: 70px;
+        .book-tab-block{
+            border-radius: 20px;
+            opacity: 1;
+            background-color: #fff;
+            max-width: 890px;
+            margin: 0 auto;
+        }
+    }
+}
+@media ($sm-1679){
+    .book-consultation .title-block p{
+        font-size: 17px;
+    }
+    .book-consultation .title-block p {
+        max-width: 950px;
+    }
+    .book-consultation .book-tab-cover {
+        padding-top: 50px;
+    }
+    .book-consultation {
+        padding: 65px 0;
+    }
+}
+@media ($sm-1441){
+    .book-consultation .title-block p{
+        font-size: 16px;
+    }
+    .book-consultation .title-block p {
+        max-width: 900px;
+    }
+    .book-consultation .book-tab-cover {
+        padding-top: 40px;
+    }
+    .book-consultation {
+        padding: 55px 0;
+    }
+}
+@media ($sm-1281){
+    .book-consultation .title-block p{
+        font-size: 14px;
+    }
+}
+@media ($sm-579){
+    .book-consultation {
+        padding: 40px 0;
+    }
+    .book-consultation .book-tab-cover {
+        padding-top: 30px;
+    }
+    .book-consultation .title-block .sec-title {
+        margin-bottom: 20px;
+    }
+}
