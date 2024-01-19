@@ -241,6 +241,7 @@ footer{
         .site-link{
             color: $white;
             text-decoration: none;
+            font-weight: 700;
         }
         @media ($sm-1679){
             font: normal normal normal 15px/20px $primary_font;
