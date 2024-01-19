@@ -186,6 +186,7 @@ header .call-top .tel-link {
     font: normal normal 500 14px/17px "Inter", sans-serif;
     margin-bottom: 0px;
     border-bottom: 1px solid #5264a3;
+    padding-bottom: 20px;
   }
 }
 .navbar .navbar-nav .nav-link.btn {
