@@ -65,15 +65,20 @@ footer{
                     font: normal normal normal 15px/30px $primary_font;
                 }
                 @media ($sm-1679){
-                    font: normal normal normal 14px/29px $primary_font;
+                    font: normal normal normal 14px/22px $primary_font;
                 }
             }
             .social-icon-set{
                 max-width: 235px;
                 display: flex;
                 column-gap: 15px;
+                justify-content: center;
                 .icon{
                     display: flex;
+                    transition: all 0.5s linear;
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
                     @media ($sm-991){
                         max-width: 30px;
                     }
@@ -147,12 +152,38 @@ footer{
             .blk-wrp{
                 display: flex;
                 column-gap: 94px;
+                @media ($sm-1679){
+                    column-gap: 70px;
+                }
+                @media ($sm-1481){
+                    column-gap: 50px;
+                }
+                @media ($sm-1281){
+                    column-gap:40px;
+                }
+                @media ($sm-1199){
+                    column-gap:35px;
+                }
+                @media ($sm-991){
+                    column-gap:30px;
+                }
+                @media ($sm-579){
+                    column-gap: 0;
+                    flex-direction: column;
+                }
             }
             .ftr-blks{
                 display: flex;
                 max-width: 248px;
+                @media ($sm-579){
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                }
                 p{
                     margin-bottom: 5px;
+                    @media ($sm-991){
+                        margin-bottom: 0px;
+                    }
                 }
                 .tel-link{
                     color: $white;
@@ -162,9 +193,26 @@ footer{
                     margin-right: 18px;
                     font: normal normal normal 15px/19px $primary_font;
                     flex: 0 0 auto;
+                    @media ($sm-991){
+                        font: normal normal normal 14px/18px $primary_font;
+                    }
+                    @media ($sm-579){
+                        margin-bottom: 10px;
+                    }
                 }
                 .info{
                     font: normal normal normal 15px/25px $primary_font;
+                    @media ($sm-1679){
+                        font: normal normal normal 14px/24px $primary_font;
+                    }
+                }
+            }
+        }
+        &.one{
+            .ftr-left{
+                @media ($sm-991){
+                    order: unset;
+                    margin-bottom: 20px;
                 }
             }
         }
