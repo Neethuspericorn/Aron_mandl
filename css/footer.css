@@ -237,6 +237,7 @@ footer .scroll-top {
   cursor: pointer;
   right: 100px;
   bottom: 50px;
+  z-index: 1;
 }
 footer .scroll-top img {
   max-width: 17px;
