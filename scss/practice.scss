@@ -465,13 +465,129 @@
         }
     }
 }
-  
-// .slick-prev{
-//     width: 0;
-//     height: 0;
-//     border-top: 10px solid transparent; /* Adjust size as needed */
-//     border-bottom: 10px solid transparent; /* Adjust size as needed */
-//     border-left: 15px solid #000; /* Arrow color */
-//     cursor: pointer; 
-// }
 
+
+.testimonial-sec{
+    .heading-sec {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .team-box {
+        margin: 0 20px;
+        border: 1px solid #D8E0FF;
+        padding: 20px;
+        border-radius: 22px;
+        background-color: #fff;
+    }
+    .testimonial-content{
+        padding-top: 30px;
+        min-height: 350px;
+        @media ($sm-1679){
+           
+            min-height: 300px;
+        }
+        @media ($sm-1281){
+           
+            min-height: 200px;
+        }
+        p{
+            font-family: $title_font;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0px;
+            color: #2D3D76;
+
+            @media ($sm-1679){
+                font-size: 15px;
+                line-height: 24px;
+           
+            }
+          
+            @media ($sm-1281){
+                font-size: 14px;
+                line-height: 24px;
+           
+            }
+        }
+  
+    }
+
+
+    .quote-img{
+        width: 34px;
+        height: 41px;
+        @media ($sm-1679){
+            width: 30px;
+            height: 34px;
+       
+        }
+        img{
+            object-fit: contain !important;
+        }
+    }
+    .details1.testmonial-detail {
+        display: flex;
+        align-items: center;
+        
+    min-height: 74px;
+    .client-img {
+        width: 63px;
+        height: 63px;
+        @media ($sm-1679){
+            width: 46px;
+            height: 46px;
+       
+        }
+      
+
+       
+      
+    }
+    .client-detail {
+        padding-left: 20px;
+
+    .name{
+  
+        font-size: 18px;
+        font-family: $primary_font;
+        line-height: 21px;
+        color: #2D3D76;
+        font-weight: 600;
+        @media ($sm-1679){
+            font-size: 15px;
+            line-height: 24px;
+       
+        }
+      
+        @media ($sm-1281){
+            font-size: 14px;
+            line-height: 24px;
+       
+        }
+    }
+
+    .position{
+        
+        font-size: 17px;
+        font-family: $primary_font;
+        line-height: 27px;
+        color: #2D3D76;
+        @media ($sm-1679){
+            font-size: 14px;
+            line-height: 20px;
+       
+        }
+      
+        @media ($sm-1281){
+            font-size: 13px;
+            line-height: 22px;
+       
+        }
+    }
+    }
+    
+  
+    }
+
+}
