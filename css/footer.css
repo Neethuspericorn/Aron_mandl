@@ -79,6 +79,21 @@ footer .ftr-inner .ftr-logo .ftr-brand {
   display: block;
   max-width: 95px;
 }
+@media (max-width: 1679px) {
+  footer .ftr-inner .ftr-logo .ftr-brand {
+    max-width: 85px;
+  }
+}
+@media (max-width: 1481px) {
+  footer .ftr-inner .ftr-logo .ftr-brand {
+    max-width: 75px;
+  }
+}
+@media (max-width: 1281px) {
+  footer .ftr-inner .ftr-logo .ftr-brand {
+    max-width: 70px;
+  }
+}
 footer .ftr-inner .ftr-left {
   max-width: 462px;
 }
@@ -272,6 +287,11 @@ footer .ftr-inner .ftr-right .ftr-blks {
   footer .ftr-inner .ftr-right .ftr-blks {
     flex-direction: column;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 579px) {
+  footer .ftr-inner .ftr-right .ftr-blks:last-child {
+    margin-bottom: 0px;
   }
 }
 footer .ftr-inner .ftr-right .ftr-blks p {
