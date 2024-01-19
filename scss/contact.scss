@@ -12,24 +12,84 @@
         padding-top: 80px;
     }
     @media ($sm-1199){
-        padding-top: 80px;
+        padding-top: 60px;
+    }
+    @media ($sm-991){
+        padding-top: 50px;
     }
     color: #2D3D76;
     .input-wrp{
-        padding-bottom: 20px;
-        margin-bottom: 15px;
+        
+        margin-bottom: 35px;
+        position: relative;
+        .error{
+            color: #f24444;
+            font-size: 11px;
+            position: absolute;
+            top: 100%;
+        }
+        @media ($sm-1679){
+            margin-bottom: 26px;
+        }
+        @media ($sm-1441){
+            margin-bottom: 20px;
+        }
+        @media ($sm-1199){
+            margin-bottom: 18px;
+        }
         label{
             font-size: 17px;
+            @media ($sm-1679){
+                font-size: 16px;
+            }
+            @media ($sm-1441){
+                font-size: 14px;
+            }
+            @media ($sm-1199){
+                font-size: 13px;
+            }
             color: #2D3D76;
             sup.req{
                 color: #F24444;
             }
         }
+        textarea.form-control{
+            height: 180px;
+            @media ($sm-1679){
+                height: 160px;
+            }
+            @media ($sm-1441){
+                height: 140px;
+            }
+            @media ($sm-1199){
+                height: 120px;
+            }
+            @media ($sm-991){
+                height: 80px;
+            }
+            @media ($sm-767){
+                height: 70px;
+            }
+        }   
         .form-control{
             border-radius: 27px;
             padding: 13px 30px;
             box-shadow: none !important;
             border-color: transparent !important;
+            @media ($sm-1679){
+                font-size: 16px;
+                padding: 12px 26px;
+            }
+            @media ($sm-1441){
+                font-size: 14px;
+                padding: 10px 24px;
+                border-radius: 20px;
+            }
+            @media ($sm-1199){
+                font-size: 13px;
+                padding: 10px 20px;
+                
+            }
             &::placeholder{
                 color: #D8E6F0;
             }
@@ -41,6 +101,20 @@
             border-radius: 27px;
             font-size: 17px;
             padding: 13px 30px;
+            @media ($sm-1679){
+                font-size: 16px;
+                padding: 12px 26px;
+            }
+            @media ($sm-1441){
+                font-size: 14px;
+                padding: 10px 24px;
+                border-radius: 20px;
+            }
+            @media ($sm-1199){
+                font-size: 13px;
+                padding: 10px 20px;
+                 
+            }
         }
         .phone{
             font-size: 25px;
@@ -90,11 +164,16 @@
     .form-col{
         max-width: 510px;
         margin-left: auto;
+        @media  ($sm-767){
+            margin-right: auto;
+            max-width: 100%;
+            padding-top: 10px;
+        }
     }
     .sec-info{
         display: flex;
         font-size: 19px;
-        margin-bottom: 30px;
+        margin-bottom: 1.5em;
         @media ($sm-1679){
             font-size: 16px;
         }
@@ -122,15 +201,15 @@
         font-size: 47px;
         font-weight: 600;
         line-height: 1.38;
-        margin-bottom: 20px;
+        margin-bottom: 0.4em;
         @media ($sm-1679){
             font-size: 40px;
         }
         @media ($sm-1441){
-            font-size: 32px;
+            font-size: 36px;
         }
         @media ($sm-1199){
-            font-size: 24px;
+            font-size: 28px;
         }
     }
     .sec-subtitle{
