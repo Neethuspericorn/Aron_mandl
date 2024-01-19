@@ -488,6 +488,10 @@
     .heading-sec {
         width: 75%;
         margin: 0 auto;
+        @media ($sm-991){
+           
+          width: 100%;
+        }
     }
     .team-box {
         margin: 0 20px;
@@ -504,6 +508,14 @@
             min-height: 300px;
         }
         @media ($sm-1281){
+           
+            min-height: 300px;
+        }
+        @media ($sm-767){
+           
+            min-height: 200px;
+        }
+        @media ($sm-479){
            
             min-height: 300px;
         }
@@ -629,6 +641,11 @@
             @media ($sm-1679){
                 width: 140px;
                  height: 124px;
+           
+            }
+            @media ($sm-991){
+              
+                 height: 90px;
            
             }
           

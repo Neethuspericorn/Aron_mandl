@@ -529,6 +529,11 @@
   width: 75%;
   margin: 0 auto;
 }
+@media (max-width: 991px) {
+  .testimonial-sec .heading-sec {
+    width: 100%;
+  }
+}
 .testimonial-sec .team-box {
   margin: 0 20px;
   border: 1px solid #D8E0FF;
@@ -546,6 +551,16 @@
   }
 }
 @media (max-width: 1281px) {
+  .testimonial-sec .testimonial-content {
+    min-height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-sec .testimonial-content {
+    min-height: 200px;
+  }
+}
+@media (max-width: 479px) {
   .testimonial-sec .testimonial-content {
     min-height: 300px;
   }
@@ -665,6 +680,11 @@
   .logo-section .logo-inner .logo-img {
     width: 140px;
     height: 124px;
+  }
+}
+@media (max-width: 991px) {
+  .logo-section .logo-inner .logo-img {
+    height: 90px;
   }
 }
 .logo-section .logo-inner .logo-img img {
