@@ -286,6 +286,12 @@ footer .scroll-top {
   bottom: 50px;
   z-index: 1;
 }
+@media (max-width: 1679px) {
+  footer .scroll-top {
+    width: 50px;
+    height: 50px;
+  }
+}
 footer .scroll-top img {
   max-width: 17px;
 }
