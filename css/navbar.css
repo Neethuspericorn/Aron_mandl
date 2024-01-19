@@ -234,6 +234,7 @@ header .call-top .tel-link {
     padding: 15px 25px;
     font-size: 14px;
     margin-left: 0px;
+    border-bottom: none;
   }
 }
 .navbar .navbar-nav .nav-link.btn:hover {
